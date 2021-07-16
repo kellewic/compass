@@ -1,0 +1,65 @@
+<dashboard hideExport="true">
+  <label>DevOps - Investigate - Troubleshoot</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Advanced filtering approach optimizes for the kind of data you are viewing. Isolate problems in real time and arrive at insights with a no- and low-code, context-based browsing and exploration experience. Expand investigations with easy context switching from monitoring and investigation with recommended, contextually relevant information in a single click. Full-fidelity ingest and OpenTelemetry standardized data stitches together latency from web browsers through backend services, helping reduce MTTR by identifying and isolating issues faster across every transaction, resource and dependency.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/log-observer.html">Splunk Log Observer</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.htm">Splunk Infrastructure Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-apm.html">Splunk Application Performance Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/real-user-monitoring.html">Splunk Real User Monitoring</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/devops__investigate__incidents">Incidents</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Log Observer provides an array of tools that allow you to answer questions such as the following:
+<ul>
+  <li>Which path in my API has the slowest response time?</li>
+  <li>What is the total number of errors by service?</li>
+  <li>What error messages correlate with, for example, declines in checkout rate?</li>
+  <li>Does a specific error message correlate with a code version?</li>
+  <li>Can I confirm that a recent fix stopped the problem?</li>
+</ul>
+With Splunk Real User Monitoring, you can gain insight about the performance and health of the front-end user experience of your application. Splunk RUM collects performance metrics, web vitals, errors, and other forms of data to enable you to detect and troubleshoot problems in your application.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/product-brief/splunk-log-observer.pdf">Splunk Log Observer - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/product-brief/splunk-real-user-monitoring.pdf">Splunk Real User Monitoring (RUM) - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/application-performance-monitoring-tool.pdf">Is Your Application Performance Monitoring Tool Cutting Corners? - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/splunk-observability-cloud.html">Conquer Complexity at Any Scale With the New Splunk Observability Cloud - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Observability/get-started/o11y/logs.html">Troubleshoot with logs - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=troubleshoot&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1554416734780001tYXj&amp;search.products=1601591781565002NmQe&amp;search.products=1571157646148001eiLa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

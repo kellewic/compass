@@ -1,0 +1,55 @@
+<dashboard hideExport="true">
+  <label>ITOps - Monitor - Cloud</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Splunk Infrastructure Monitoring offers insight into your infrastructure and resources across hybrid and multi-cloud environments. Infrastructure Monitoring offers support for a broad range of integrations for collecting all kinds of data, from system metrics for infrastructure components to custom data from your applications.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.htm">Splunk Infrastructure Monitoring</a>
+        </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+        <span><a href="/app/welcome-app/itops__investigate__incidents">Incidents</a>, </span>
+        <span><a href="/app/welcome-app/itops__monitor__infrastructure">Infrastructure</a>, </span>
+        <span><a href="/app/welcome-app/itops__monitor__services">Services</a>, </span>
+        <span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
+        <span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Connect Observability Cloud to your cloud service provider to collect data from supported cloud services in AWS, GCP, or Azure. You do not have to connect to cloud services to monitor hosts or Kubernetes clusters that run in cloud services, but connecting your cloud account is the only way to collect cloud metadata. Observability Cloud supports integrations for Kubernetes, Linux, and Windows.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/data-insider/what-is-cloudops.html">What Is CloudOps? - Data Insider</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/it-service-intelligence.pdf">Splunk IT Service Intelligence - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/data-sheets/splunk-infrastructure-monitoring.pdf">Splunk Infrastructure Monitoring - Data Sheet</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Observability/get-started/welcome.html#nav-Welcome-to-Splunk-Observability-Cloud">Splunk Observability Cloud - Documentation</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=cloud&amp;search.products=1518807815929006Tats&amp;search.products=1601591781565001Na8P&amp;search.products=option_1584675302134">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

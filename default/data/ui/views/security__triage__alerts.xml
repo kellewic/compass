@@ -1,0 +1,51 @@
+<dashboard hideExport="true">
+  <label>Security - Triage - Alerts</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Deliver the right alerts to the right people reducing time to acknowledge and resolve incidents. Provide contextual alert information, suggestions driven from machine learning, and empower collaboration to solve problems with speed and efficiency, all while capturing essential remediation data.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/cyber-security-essentials.html">Splunk Security Essentials</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/user-behavior-analytics.html">Splunk User Behavior Analytics</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-on-call.html">Splunk On-Call</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__triage__notable_events">Notable Events</a>, </span>
+<span><a href="/app/welcome-app/security__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+When Splunk unearths an issue and triggers an alert, On-Call ingests the alert, appending it with context (e.g., runbooks, annotations, graphs) before automatically routing it to the right person or team. Native chat and built-in Slack integrations make collaboration a breeze. Whether it’s 3:00 p.m. or 3:00 a.m., cross-functional teams have the information they need to solve incidents efficiently.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/2019-Splunk-IT-Splunk%20and%20VictorOps.pdf">Splunk On-Call Capabilities - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/customers/success-stories/pscu.html">PSCU Safeguards Reliability, Security Through the Splunk Platform - Customer Story</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/app-integrations/on-call.html">Splunk On-Call Integrations - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=alert&amp;search.products=1518807815929004Tieu&amp;search.products=1555708480629001zHpW&amp;search.products=1518807815929005TSAa&amp;search.products=1554416734780001tYXj#/">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

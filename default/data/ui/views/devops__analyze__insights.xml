@@ -1,0 +1,49 @@
+<dashboard hideExport="true">
+  <label>DevOps - Analyze - Insights</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Answer business-critical questions like, “Are our services contributing to a good experience for the consumer?” Monitor SLOs and SLIs with instant, service-level insights. Additionally, custom metrics for business KPIs means you can track the number of products sold, cost per workload and more in real time.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.htm">Splunk Infrastructure Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-apm.html">Splunk Application Performance Monitoring</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/devops__analyze__aiops">AIOps</a>, </span>
+<span><a href="/app/welcome-app/devops__analyze__machine_learning">Machine Learning</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Start monitoring your environment with high-resolution visualizations, hundreds of integrations and pre-built dashboards, and explore services like containers in seconds — while slicing and dicing on services seamlessly. Detailed usage reports help you identify underutilized instances and troubleshoot over provisioning. Embrace the cloud with the confidence gained from having deep visibility into your environments. Expedite triaging and troubleshooting with AI-driven analytics that automatically surfaces insights and recommendations. Sophisticated algorithms including Historical Performance Baseline and Sudden Change, detect system-level issues such as a sudden increase in Goroutines or container restarts and alert within seconds.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/data-sheets/app-dev/splunk-kubernetesmonitoring.pdf">Real-Time Kubernetes Monitoring - Data Sheet</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/data-sheets/splunk-infrastructure-monitoring.pdf">Splunk Infrastructure Monitoring - Data Sheet</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/splunk-observability-cloud.html">Conquer Complexity at Any Scale With the New Splunk Observability Cloud - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=insight&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1554416734780001tYXj&amp;search.products=1601591781565002NmQe&amp;search.products=1571157646148001eiLa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

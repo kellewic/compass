@@ -1,0 +1,58 @@
+<dashboard hideExport="true">
+  <label>DevOps - Monitor - Applications</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Splunk Application Performance Monitoring (APM) works with any cloud environment and any existing infrastructure. Gain insights into cloud-native, microservice and monolithic applications, while tracing everything and seeing it all in one place. To deliver a flawless end-user experience, you need to observe everything. Splunk doesn't sample data, but provides full-fidelity trace ingestion, leveraging all your trace data to identify anomalies. Breakdown and explore any transaction by any metric or dimension. Quickly and easily understand how your application behaves for different regions, hosts, versions or users. Capable of ingesting and storing high resolution, low latency data at massive scale, Splunk APM collects data from a wide range of client libraries and cloud integrations by using open-source based auto or manual instrumentation.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-apm.html">Splunk Application Performance Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.htm">Splunk Infrastructure Monitoring</a>
+        </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/devops__investigate__incidents">Incidents</a>, </span>
+<span><a href="/app/welcome-app/devops__monitor__cloud">Cloud</a>, </span>
+<span><a href="/app/welcome-app/devops__monitor__user_experience">User Experience</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+By collecting all traces, instead of sampling, no anomaly goes undetected. Whether a user experiences an error or longer-than-usual latency, you’ll know and can act on it in seconds. Not all bad behavior results in errors — as developers create new applications they need to know if their releases provide the expected results. By collecting all trace data you ensure that cloud-native applications behave how they are supposed to. Infrastructure and application performance are interdependent. To see the full picture, Splunk APM provides seamless correlation between cloud infrastructure and the microservices running on top of it. If your application acts out because of memory leakage, a noisy neighbor container or any other infrastructure-related issue, Splunk will let you know. To complete the picture, in-context access to Splunk logs and events enable deeper troubleshooting and root-cause analysis.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/application-performance-monitoring-tool.pdf">Is Your Application Performance Monitoring Tool Cutting Corners? - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/announcing-signalfx-microservices-apm.html">Reimagining APM for the Cloud-Native World: Introducing Splunk APM - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/splunk-observability-cloud.html">Conquer Complexity at Any Scale With the New Splunk Observability Cloud - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Observability/get-started/o11y/apm.html">Monitor applications with Splunk APM - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Observability/get-started/o11y/infrastructure.html">Monitor your infrastructure - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=apm&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1554416734780001tYXj&amp;search.products=1601591781565002NmQe&amp;search.products=1571157646148001eiLa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

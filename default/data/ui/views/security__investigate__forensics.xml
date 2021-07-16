@@ -1,0 +1,46 @@
+<dashboard hideExport="true">
+  <label>Security - Investigate - Forensics</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Reduce dwell times with automated investigations. Reduce response times with playbooks that execute at machine speed. Drive efficient communications across your team with integrated collaboration tools. Use event and case management to rapidly triage events in an automated, semi-automated or manual fashion. Confirmed events can be aggregated and escalated to cases, which enable efficient tracking and monitoring of case status and progress. Measure and report on all activity to provide human oversight and auditing.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html">Splunk SOAR</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/mission-control-dashboard.html">Splunk Mission Control</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__investigate__incidents">Incidents</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Ingest machine data from multi-cloud and on-premises deployments for full visibility into activities. Such data could include currently logged on users, established network connections, open and listening ports, DNS queries, running processes, open files, command-line history, scheduled tasks, browser usage, and clipboard contents. With security investigations, time is critical so having the ability to enrich investigations with endpoint forensic data before initial triage is a huge time-saver. This also provides analysts with more information while carrying out their investigation before escalating the event.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/cyber-security/forensics-and-investigation.html">Splunk Investigation and Forensics</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/resources/videos/powering-forensic-research-at-purdue-with-splunk.html">Powering Forensic Research at Purdue with Splunk - Video</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=forensics">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

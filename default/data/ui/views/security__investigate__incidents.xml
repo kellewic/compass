@@ -1,0 +1,72 @@
+<dashboard hideExport="true">
+  <label>Security - Investigate - Incidents</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Understand threat activity so you can thwart breaches. Identify, prioritize and manage security events with event sequencing, alert management and risk scores. Investigate and correlate activities across multi cloud and on-premises in one unified view. Automate security actions and responses across your security tools within seconds. Clear a vast majority of alerts with no human interaction.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/cyber-security-essentials.html">Splunk Security Essentials</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html">Splunk SOAR</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-on-call.html">Splunk On-Call</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/mission-control-dashboard.html">Splunk Mission Control</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/security__triage__notable_events">Notable Events</a>, </span>
+<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a>, </span>
+<span><a href="/app/welcome-app/security__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+A security incident is a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices. While preventive activities based on the results of risk assessments can lower the number of incidents, not all incidents can be prevented. You need an incident response capability to detect incidents quickly, minimize loss and destruction, mitigate exploited system weaknesses, and restore IT services.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/cyber-security/security-incident-response.html">Splunk Security Incident Response</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/cyber-security/forensics-and-investigation.html">Splunk Investigation and Forensics</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/devops/incident-response.html">Make on-call suck less</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/splunk-mission-control.pdf">Splunk Mission Control - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/2019-Splunk-IT-Splunk%20and%20VictorOps.pdf">Splunk + VictorOps - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/security/a-unified-security-operations-platform-splunk-mission-control.html">A Unified Security Operations Platform: Splunk Mission Control - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ES/latest/User/IncidentReviewdashboard">Overview of Incident Review in Splunk Enterprise Security - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ES/latest/User/Timelines">Investigations in Splunk Enterprise Security - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/app-integrations/on-call.html">Splunk On-Call Integrations - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=incident&amp;search.track=1518804348605003MxfU&amp;search.products=1518807815929004Tieu&amp;search.products=1518807815929002TlAS&amp;search.products=1518807815929005TSAa&amp;search.products=1564084218064001QKuM&amp;search.products=1524857772187001kLHz">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

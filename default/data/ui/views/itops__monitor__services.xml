@@ -1,0 +1,52 @@
+<dashboard hideExport="true">
+  <label>ITOps - Monitor - Services</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+A service is a set of interconnected applications and hosts that are configured to offer a specific service to the organization. Services can be internal, like an organization email system, or customer-facing, like an organization's website. For example, creating financial reports through a web-based application requires a computer, web server, application server, databases, middleware, and network infrastructure. These applications and hosts are all configured to offer the service of financial reporting.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/itops__investigate__incidents">Incidents</a>, </span>
+<span><a href="/app/welcome-app/itops__monitor__infrastructure">Infrastructure</a>, </span>
+<span><a href="/app/welcome-app/itops__monitor__cloud">Cloud</a>, </span>
+<span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a>, </span>
+<span><a href="/app/welcome-app/itops__analyze__insights">Insights</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+An entity is an IT component that requires management to deliver an IT service. After you create entities, you associate them with ITSI services. IT Service Intelligence (ITSI) uses services as a representation of real-world IT services that you can use to monitor the health of IT systems and business processes. After you initially create one or more services, you must perform some configuration, including adding entity rules to filter entities, adding KPIs to monitor the service's health, and adding service dependencies. You can then use ITSI to monitor service health, perform root-cause analysis, set up threshold-based alerts, and track compliance with organizational SLAs (service-level agreements).
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/it-service-intelligence.pdf">Splunk IT Service Intelligence - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/Entity/CreateSingleEntity">Create a single entity in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/SI/CreateService">Overview of creating services in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=services&amp;search.products=1518807815929006Tats#/">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

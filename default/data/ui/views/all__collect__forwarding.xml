@@ -1,0 +1,56 @@
+<dashboard hideExport="true">
+  <label>All - Collect - Forwarding</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+The Splunk platform can index any kind of data. In particular, the Splunk platform can index any and all IT streaming, machine, and historical data, such as Microsoft Windows event logs, web server logs, live application logs, network feeds, metrics, change monitoring, message queues, archive files, and so on. On many operating systems, a Splunk Universal Forwarder can be installed to collect the data and send it to the Splunk platform either directly to the indexers or to Splunk Data Stream Processor acting as a centralized data aggregator.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+          <a target="_blank" href="https://docs.splunk.com/Documentation/Forwarder/8.2.0/Forwarder/Abouttheuniversalforwarder">Splunk Universal Forwarder</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/stream-processing.html">Splunk Data Stream Processor</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.html">Splunk Infrastructure Monitoring</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-apm.html">Splunk Application Performance Monitoring</a>
+          </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+        <span><a href="/app/welcome-app/all__collect__streaming">Streaming</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+For Windows and Linux OSes, the easiest way to collect data is to install the Splunk Universal Forwarder which will then send data to your Splunk platform. For devices such as network devices, you can configure TCP or UDP outputs to the Splunk platform or use your existing syslog infrastructure to forward the data to Splunk. For cloud-native infrastructure and application data, you can use Splunk’s Smart Agent or OpenTelemetry Collector.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.observability.splunk.com/en_us/opentelemetry.html">Splunk OpenTelemetry</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/data-insider/what-is-opentelemetry.html">What Is OpenTelemetry? - Data Insider</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/Forwarder/latest/Forwarder/Abouttheuniversalforwarder">Splunk Universal Forwarder - Documentation</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/Splunk/latest/Data/WhatSplunkcanmonitor">What data can I index? - Documentation</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=forwarder">Splunk .conf Online</a>
+            </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel>
+      <html>
+    </html>
+    </panel>
+  </row>
+</dashboard>

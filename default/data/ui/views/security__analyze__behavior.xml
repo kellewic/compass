@@ -1,0 +1,62 @@
+<dashboard hideExport="true">
+  <label>Security - Analyze - Behavior</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Behavior-based threat detection is based on machine learning methodologies that require no signatures or human analysis, enabling multi-entity behavior profiling and peer group analytics — for users, devices, service accounts and applications. The result is automated, accurate threat and anomaly detection.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/user-behavior-analytics.html">Splunk User Behavior Analytics</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__monitor__threats">Threats</a>, </span>
+<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/welcome-app/security__analyze__fraud">Fraud</a>, </span>
+<span><a href="/app/welcome-app/security__analyze__machine_learning">Machine Learning</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+The entire lifecycle of security operations - prevention, detection, response, mitigation, to the ongoing feedback loop - must be unified by continuous monitoring and advanced analytics to provide context-aware intelligence. Splunk Enterprise, Splunk Enterprise Security, and Splunk User Behavior Analytics work together to:
+<ul>
+  <li>Extend the search/pattern/expression (rule) based approaches in Splunk Enterprise and Splunk ES with threat detection techniques to detect threats with sophisticated kill chain visualizations.</li>
+  <li>Provide security teams with machine learning, statistical profiling and other anomaly detection techniques that leverage the readily available data at massive scale in Splunk Enterprise.</li>
+  <li>Combine machine learning methods and advanced analytics capabilities to enable organizations to monitor, alert, analyze, investigate, respond, share and detect known and unknown threats regardless of organizational size or skill set.</li>
+</ul>
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/splunk-uba.pdf">Splunk User Behavior Analytics - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/using-splunk-uba-to-detect-insider-threats.pdf">Using Splunk UBA to Detect Insider Threats - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/using-splunk-uba-to-detect-cyber-attacks.pdf">Using Splunk UBA to Detect Cyber Attacks - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/splunk-for-advanced-analytics-and-threat-detection-tech-brief.pdf">Splunk for Advanced Analytics and Threat Detection - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/UBA/latest/User/About">Splunk User Behavior Analytics - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=Behavior&amp;search.products=1524857772187001kLHz&amp;search.products=1518807815929004Tieu&amp;search.products=1555708480629001zHpW&amp;search.products=1518807815929005TSAa&amp;search.products=splunkphantom#/">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

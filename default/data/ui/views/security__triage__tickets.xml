@@ -1,0 +1,47 @@
+<dashboard hideExport="true">
+  <label>Security - Triage - Tickets</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Splunk Enterprise Security provides an Investigations page where you can start, manage, and add details to investigations. You can see the titles, descriptions, time created, last modified time, and collaborators on the investigations assigned to you. If you have the capability to manage all investigations, you can see all the same details for all investigations, not just the investigations that you collaborate on. Splunk also has the ability to perform bi-directional messaging to external ticketing systems such as ServiceNow.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://docs.splunk.com/Documentation/AddOns/latest/ServiceNow/About">Splunk Add-on for ServiceNow</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/security__triage__notable_events">Notable Events</a>, </span>
+<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+You are notified of a security incident that needs investigation through a notable event, an alert action, or an email, ticket from the help desk, or a phone call. Create an investigation in Splunk Enterprise Security and add colleagues to the investigation as collaborators. Add artifacts to the investigation scope, in addition to those added automatically from notable events. As you investigate, add helpful or insightful events, actions, and artifacts to the investigation to record the steps you took in your investigation. You can also open tickets to external systems such as ServiceNow to engage other teams even if they don't have access to Splunk. Complete and close the investigation and optionally, close associated notable events.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ES/latest/User/Timelines">Investigations in Splunk Enterprise Security - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/AddOns/released/ServiceNow/ConfigureServiceNowtointegratewithSplunkEnterprise">Configure ServiceNow to integrate with the Splunk platform - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=ticket&amp;search.products=1518807815929004Tieu&amp;search.products=1518807815929005TSAa&amp;search.products=1554416734780001tYXj&amp;search.products=1555708480629001zHpW&amp;search.products=splunkphantom&amp;search.products=1524857772187001kLHz">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

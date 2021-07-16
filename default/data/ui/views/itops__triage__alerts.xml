@@ -1,0 +1,48 @@
+<dashboard hideExport="true">
+  <label>ITOps - Triage - Alerts</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Deliver the right alerts to the right people reducing time to acknowledge and resolve incidents. Provide contextual alert information, suggestions driven from machine learning, and empower collaboration to solve problems with speed and efficiency, all while capturing essential remediation data.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/it-essentials.html">Splunk IT Essentials</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-on-call.html">Splunk On-Call</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/itops__triage__notable_events">Notable Events</a>, </span>
+<span><a href="/app/welcome-app/itops__triage__episodes">Episodes</a>, </span>
+<span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+When Splunk unearths an issue and triggers an alert, On-Call ingests the alert, appending it with context (e.g., runbooks, annotations, graphs) before automatically routing it to the right person or team. Native chat and built-in Slack integrations make collaboration a breeze. Whether it’s 3:00 p.m. or 3:00 a.m., cross-functional teams have the information they need to solve incidents efficiently.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/2019-Splunk-IT-Splunk%20and%20VictorOps.pdf">Splunk On-Call Capabilities - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/app-integrations/on-call.html">Splunk On-Call Integrations - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=alert&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1518807815929006Tats&amp;search.products=1554416734780001tYXj&amp;search.products=15519983470270023aRG#/">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

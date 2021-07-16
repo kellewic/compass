@@ -1,0 +1,49 @@
+<dashboard hideExport="true">
+  <label>Security - Monitor - Compliance</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Bring powerful indexing, searching, alerting and reporting to the challenges of change management. With Splunk, you can search, alert and report on machine data from virtually any source. Meet compliance requirements from audit trail collection and reporting, to file integrity monitoring with a single solution. Generate any compliance report in seconds. And you’ll overcome the operational impact of demands to restrict production system access by giving developers and application support secure, read-only access to the machine data they need without touching production systems.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://docs.splunk.com/Documentation/PCI/latest/User/Overview">Splunk App for PCI</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__investigate__incidents">Incidents</a>, </span>
+<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Data integrity is ensured via hardened deployments and comprehensive auditing and security. Archive or retire data based on age or storage limits. Role-based access controls let you adhere to strict compliance with production server access restrictions. Meet explicit requirements to monitor, review and retain logs, configurations and other machine data. 
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/solution-guides/splunk-for-compliance.pdf">Splunk for Compliance - Solution Guide</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/solution-guides/splunk-for-healthcare.pdf">Splunk for Healthcare - Solution Guide</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/PCI/4.5.0/User/Overview">Overview of the Splunk App for PCI Compliance - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=compliance">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

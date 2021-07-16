@@ -1,0 +1,48 @@
+<dashboard hideExport="true">
+  <label>DevOps - Triage - Tickets</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+In addition to sending alerts to specific groups or people, Splunk Infrastructure Monitoring also integrates with several notification services such as ServiceNow, Splunk OnCall, and Slack to name a few.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.htm">Splunk Infrastructure Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-on-call.html">Splunk On-Call</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/devops__triage__alerts">Alerts</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Create, edit, or subscribe to a detector for which you want alert notifications to be sent to a ServiceNow issue. Select the name of your ServiceNow integration as a notification recipient. Infrastructure Monitoring will now send a notification to ServiceNow whenever the detector rule conditions are met. When the alert clears, Infrastructure Monitoring will send a notification that sets the state as “Resolved” in ServiceNow.
+        </p>
+        <p>
+          ServiceNow is an example of how to integrate to an external system and most are set up the same.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/splunk-observability-cloud.html">Conquer Complexity at Any Scale With the New Splunk Observability Cloud - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.signalfx.com/en/latest/admin-guide/integrate-notifications.html#integrate-notifications">Integrate with notification services - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=ticket&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1554416734780001tYXj&amp;search.products=1601591781565002NmQe&amp;search.products=1571157646148001eiLa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

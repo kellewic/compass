@@ -1,0 +1,58 @@
+<dashboard hideExport="true">
+  <label>Security - Monitor - Risk</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Splunk collects machine data from any source in any format across the enterprise. Machine data contains a definitive record of all activity and behavior of your users, citizens, transactions, applications, servers, networks, mobile devices, sensors and more. It includes configurations, data from APIs, message queues, call detail records and sensor data. These key capabilities of Splunk help promote and ease the adoption of a Risk Management Framework.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/user-behavior-analytics.html">Splunk User Behavior Analytics</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__monitor__threats">Threats</a>, </span>
+<span><a href="/app/welcome-app/security__monitor__compliance">Compliance</a>, </span>
+<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Attribute risk to users and systems, map alerts to cybersecurity frameworks, and trigger alerts when risk exceeds thresholds.
+<ul>
+  <li><span class="bold">Categorize</span> information systems and information processed, stored and transmitted by systems based on an impact analysis.</li>
+  <li><span class="bold">Select</span> an initial set of baseline security controls for information systems based on the security categorization.</li>
+  <li><span class="bold">Implement</span> security controls and document how they are deployed within information systems and operating environments.</li>
+  <li><span class="bold">Assess</span> security controls to determine the extent that they are implemented correctly, operating as intended, and producing desired outcomes with respect to meeting security requirements.</li>
+  <li><span class="bold">Authorize</span> information systems operation based on risk and the decision that this risk is acceptable.</li>
+  <li><span class="bold">Monitor</span> and assess security controls on an ongoing basis including control effectiveness, documenting changes, conducting impact analyses of changes and reporting security state to appropriate organizational officials.</li>
+</ul>
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/data-insider/what-is-risk-management.html">What is Risk Management? - Data Insider</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/splunk-for-risk-management-framework.pdf">Splunk for Risk Management Framework - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ES/latest/User/RiskScoring">Analyze risk in Splunk Enterprise Security - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=risk">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

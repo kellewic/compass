@@ -1,0 +1,4 @@
+<nav search_view="search">
+  <view name="discover" default='true' />
+  <view name="learn_more" />
+</nav>

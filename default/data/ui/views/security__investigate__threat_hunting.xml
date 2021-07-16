@@ -1,0 +1,63 @@
+<dashboard hideExport="true">
+  <label>Security - Investigate - Threat Hunting</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Splunk can automate stitching hundreds of anomalies into a single threat to simplify a security analyst’s life; discover abnormalities and unknown threats that traditional security tools miss; and has deep investigative capabilities and powerful behavior baselines on any entity, anomaly or threat.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/cyber-security-essentials.html">Splunk Security Essentials</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/user-behavior-analytics.html">Splunk User Behavior Analytics</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html">Splunk SOAR</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/mission-control-dashboard.html">Splunk Mission Control</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__monitor__threats">Threats</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Threat hunting is an exercise to find cyber attacks that have penetrated your environment without raising alarms. Threat hunting involves going beyond what you already know and is about venturing into the unknown to discover new threats. This is in contrast to traditional cybersecurity investigations and responses, which stem from system alerts, and occur after potentially malicious activity has been detected.
+        </p>
+        <p>
+Intentional hunting often relies on knowing various attacker techniques and applying them to your environment. Equally important for any hunt initiative should be to gain a deeper understanding of the environment. Ingest machine data from multi-cloud and on-premises deployments for full visibility to quickly detect malicious threats in your environment.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/splunk-mission-control.pdf">Splunk Mission Control - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/solution-guide/embark-on-your-risk-based-alerting-journey-with-splunk-107-SG-web.pdf">Embark on Your Risk-Based Alerting Journey With Splunk - Solution Guide</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/platform/threat-research-at-splunk-using-smle.html">Threat Hunting with ML: Another Reason to SMLE - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/security/a-unified-security-operations-platform-splunk-mission-control.html">A Unified Security Operations Platform: Splunk Mission Control - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ES/6.5.1/Admin/Addthreatintel">Add threat intelligence to Splunk Enterprise Security - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/UBA/5.0.4.1/User/Hunter">Splunk UBA - Investigate suspicious activity as a hunter - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=threat%20hunting&amp;search.track=1518804348605003MxfU&amp;search.products=1518807815929004Tieu&amp;search.products=1518807815929002TlAS&amp;search.products=1518807815929005TSAa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

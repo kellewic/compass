@@ -1,0 +1,55 @@
+<dashboard hideExport="true">
+  <label>ITOps - Analyze - Insights</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Service Insights in IT Service Intelligence (ITSI) represents the mapping and monitoring of business and technical services within your organization. The information derived from Service Insights helps you better detect problems, simplify investigations, triage issues, and accelerate resolutions. Service Insights helps you map service dependencies based on a connection between devices and applications. This top-down mapping functionality helps you immediately see the impact of a problematic object on the rest of the service operation.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise/machine-learning.html">Splunk Machine Learning Toolkit</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/itops__monitor__infrastructure">Infrastructure</a>, </span>
+<span><a href="/app/welcome-app/itops__monitor__services">Services</a>, </span>
+<span><a href="/app/welcome-app/itops__monitor__cloud">Cloud</a>, </span>
+<span><a href="/app/welcome-app/itops__analyze__aiops">AIOps</a>, </span>
+<span><a href="/app/welcome-app/itops__analyze__machine_learning">Machine Learning</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Service Insights is the culmination of multiple ITSI components working together to bubble up the information into glass tables where you visualize and monitor the interrelationships and dependencies across your IT and business services. Entities provide data from which you create KPIs that can be influenced by adaptive thresholds and anomaly detection tools built into ITSI. The KPIs influence the service health scores of business and technical services created. Predictive analytics, which uses machine learning, can approximate what a service’s health might look like in 30 minutes. By receiving a warning that your service is likely to degrade in the next 30 minutes, you can take steps to resolve the problem before it affects other areas of your environment.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/SI/AboutSI">Overview of Service Insights in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/SI/KPIOverview">Overview of creating KPIs in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/SI/PA">Overview of Predictive Analytics in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/SI/GTOverview">Overview of the glass table editor in ITSI - Documentation</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=insights&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1518807815929006Tats&amp;search.products=1554416734780001tYXj&amp;search.products=15519983470270033QBP&amp;search.products=1571157646148001eiLa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

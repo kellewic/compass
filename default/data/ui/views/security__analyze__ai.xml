@@ -1,0 +1,50 @@
+<dashboard hideExport="true">
+  <label>Security - Analyze - AI</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Artificial intelligence (AI) is the ability of machines to observe, think and react like human beings. It’s based on the idea that human intelligence can be broken down into precise abilities which computers can be programmed to mimic. AI is an umbrella term that encompasses a wide range of concepts and technologies, including machine learning (ML).
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html">Splunk SOAR</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/user-behavior-analytics.html">Splunk User Behavior Analytics</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__monitor__threats">Threats</a>, </span>
+<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a>, </span>
+<span><a href="/app/welcome-app/security__analyze__fraud">Fraud</a>, </span>
+<span><a href="/app/welcome-app/security__analyze__machine_learning">Machine Learning</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+AI can assist with triage and analysis of huge datasets collected within Splunk. You can start with simple things like correlation searches and risk-based alerting then move up to more advanced analytics involving machine learning.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/data-insider/ai-and-machine-learning.html">What is Artificial Intelligence and Machine Learning? - Data Insider</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/data-insider/what-is-process-mining.html">What is Process Mining? - Data Insider</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=ai&amp;search.products=1518807815929004Tieu&amp;search.products=1555708480629001zHpW&amp;search.products=1518807815929005TSAa&amp;search.products=splunkphantom&amp;search.products=1524857772187001kLHz">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

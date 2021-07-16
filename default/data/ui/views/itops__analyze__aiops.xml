@@ -1,0 +1,53 @@
+<dashboard hideExport="true">
+  <label>ITOps - Analyze - AIOps</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Get end-to-end service monitoring, predictive management and full-stack visibility across hybrid cloud environments. Use predictive analytics and machine learning to prevent incidents from impacting customers. Streamline incident resolution with an integrated solution for event management, alerting and incident response. Correlate metric, event and trace data for end-to-end service monitoring and full-stack visibility. Triage, investigate and respond from one view for fast MTTR.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html">Splunk SOAR</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/stream-processing.html">Splunk Data Stream Processor</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/itops__monitor__infrastructure">Infrastructure</a>, </span>
+<span><a href="/app/welcome-app/itops__monitor__cloud">Cloud</a>, </span>
+<span><a href="/app/welcome-app/itops__monitor__services">Services</a>, </span>
+<span><a href="/app/welcome-app/itops__analyze__machine_learning">Machine Learning</a>, </span>
+<span><a href="/app/welcome-app/itops__analyze__insights">Insights</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+The future of IT Ops relies on AIOps — Artificial Intelligence for IT Operations. AIOps uses big data analytics, machine learning and artificial intelligence to deliver increased accuracy and speed to IT operations. Splunk’s AIOps platform ingests massive datasets from disparate sources and employs advanced analytics to automate operations and improve data analysis. Splunk offers predictive analytics and unified monitoring for applications, services and infrastructure. Aggregate any kind of data for a complete view of your technology stack. Deliver the business-critical insights and predictions necessary to stay ahead of service degradations, resource constraints and system outages. Minimize noise and complexity through automated event management and simplified workflow orchestration.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/data-insider/ai-for-it-operations-aiops.html">What Is Artificial Intelligence for IT Operations (AIOps)? - Data Insider</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/it/aiops.html">Modernize IT management with AIOps</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/solution-guides/splunk-for-it-operations.pdf">Splunk for IT Operations - Solution Guide</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=aiops#/">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

@@ -1,0 +1,48 @@
+<dashboard hideExport="true">
+  <label>Security - Triage - Risk-based Alerting</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Reduce alert volume and enhance security operations. Improve detection of sophisticated threats like low-and-slow attacks traditional SIEMs miss. Seamlessly align to cyber security frameworks like MITRE ATT&amp;CK, Kill Chain, CIS 20, and NIST. Scale analyst resources to optimize SOC productivity and efficiency.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/cyber-security-essentials.html">Splunk Security Essentials</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/user-behavior-analytics.html">Splunk User Behavior Analytics</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__monitor__threats">Threats</a>, </span>
+<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/welcome-app/security__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+A risk-based approach provides teams with a unique opportunity to pivot resources from traditionally reactive functions to proactive functions in the SOC. As alert fidelity and true positive rates increase, analysts’ resources can be shifted to higher impact tasks like threat hunting or adversary simulation, empowering SOCs to build up the skill sets of their analysts and prepare them for any threats they might encounter in the wild.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/solution-guide/embark-on-your-risk-based-alerting-journey-with-splunk-107-SG-web.pdf">Embark on Your Risk-Based Alerting Journey With Splunk - Solution Guide</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ES/latest/User/RiskScoring">Analyze risk in Splunk Enterprise Security - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=risk%20based%20alert&amp;search.track=1518804348605003MxfU">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

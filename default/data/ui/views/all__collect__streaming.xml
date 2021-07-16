@@ -1,0 +1,48 @@
+<dashboard hideExport="true">
+<label>All - Collect - Streaming</label>
+<row id="main">
+  <panel>
+    <html>
+      <div class="overview">
+Continuously collect high-velocity, high-volume data from diverse sources and distribute insights to multiple destinations in milliseconds. Use data manipulation functions to spot early trends or patterns in data and quickly respond to business needs. Splunk Data Stream Processor allows ITOps, SecurityOps, and DevOps teams to create a single repository of relevant data from numerous tools across the enterprise. With a unified location, the teams can accelerate troubleshooting issues and improve overall investigative procedures.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+          <a target="_blank" href="https://www.splunk.com/en_us/software/stream-processing.html">Splunk Data Stream Processor</a>, 
+          <a target="_blank" href="https://docs.splunk.com/Documentation/StreamApp">Splunk Stream</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html">Splunk SOAR</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.html">Splunk Infrastructure Monitoring</a></span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+        <span><a href="/app/welcome-app/all__collect__forwarding">Forwarding</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+As a Splunk Data Stream Processor user, you can enrich, transform, and analyze your data during the processing stage, gaining increased control and visibility into your data before it reaches its destination. If your data contains noisy or sensitive information, you can use the Splunk Data Stream Processor to remove or sanitize your data before that data is indexed, reducing security risks and focusing on only the data that you care about. You can enrich your data with data found in CSV files or even with machine learning. When your data looks the way that you want it to look, you can use the Splunk Data Stream Processor to route that data to the destination where it has the most value.
+        </p>
+        <p>
+You can also use the Splunk Data Stream Processor to design custom data pipelines that transform data and route it between a wide variety of data sources and data destinations, even if they support different data formats. For example, you can route data from a Splunk forwarder to an Amazon S3 bucket.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li><a target="_blank" href="https://www.splunk.com/en_us/data-insider/what-is-stream-processing.html">What Is Stream Processing? - Data Insider</a></li>
+          <li><a target="_blank" href="https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-learning-on-the-stream.pdf">The Essential Guide to Machine Learning on the Stream</a></li>
+          <li><a target="_blank" href="https://docs.splunk.com/Documentation/DSP/latest/Tutorial/Tutorial">Splunk Data Stream Processor Tutorial - Documentation</a></li>
+          <li><a target="_blank" href="https://docs.splunk.com/Documentation/DSP/latest/User/About">Processing data in motion using the Splunk Data Stream Processor - Documentation</a></li>
+          <li><a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=&amp;search.products=option_1583883558377">Splunk .conf Online</a></li>
+        </ul>
+      </div>
+    </html>
+  </panel>
+  <panel>
+    <html>
+    </html>
+  </panel>
+</row>
+</dashboard>

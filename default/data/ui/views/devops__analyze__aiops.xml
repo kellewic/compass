@@ -1,0 +1,63 @@
+<dashboard hideExport="true">
+  <label>DevOps - Analyze - AIOps</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Artificial intelligence (AI) is the ability of machines to observe, think and react like human beings. It’s based on the idea that human intelligence can be broken down into precise abilities which computers can be programmed to mimic. AI is an umbrella term that encompasses a wide range of concepts and technologies, including machine learning (ML).
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.htm">Splunk Infrastructure Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-apm.html">Splunk Application Performance Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/real-user-monitoring.html">Splunk Real User Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/synthetic-monitoring.html">Splunk Synthetic Monitoring</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/devops__analyze__machine_learning">Machine Learning</a>, </span>
+<span><a href="/app/welcome-app/devops__analyze__insights">Insights</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+AI-Driven Analytics and Directed Troubleshooting help reduce MTTR to quickly understand service dependencies, correlation with underlying infrastructure and root-cause error mapping. Troubleshooting is hard, and with hundreds of traces per second, humans cannot analyze trace by trace to find the root cause of an issue. Splunk APM uses a unique AI-driven approach to sift through trace data in seconds and immediately highlight which microservice is responsible for errors. Splunk Web Optimization analyzes your site against over 300 performance-related best practices, surfacing specific defects by job role and severity level. It presents the steps to remediate, helping to automate many of the manual tasks around performance.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/data-insider/ai-and-machine-learning.html">What is Artificial Intelligence and Machine Learning? - Data Insider</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/product-brief/splunk-real-user-monitoring.pdf">Splunk Real User Monitoring (RUM) - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/product-brief/splunk-synthetic-monitoring.pdf">Splunk Synthetic Monitoring - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/data-sheets/app-dev/splunk-kubernetesmonitoring.pdf">Real-Time Kubernetes Monitoring - Data Shee</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/data-sheets/splunk-infrastructure-monitoring.pdf">Splunk Infrastructure Monitoring - Data Sheet</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/splunk-observability-cloud.html">Conquer Complexity at Any Scale With the New Splunk Observability Cloud - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/improve-devops-workflows-using-smle-and-streaming-ml-to-detect-anomalies.html">Improve DevOps Workflows Using SMLE and Streaming ML to Detect Anomalies - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=ai&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1554416734780001tYXj&amp;search.products=1601591781565002NmQe&amp;search.products=1571157646148001eiLa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

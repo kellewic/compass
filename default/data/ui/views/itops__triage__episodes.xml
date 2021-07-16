@@ -1,0 +1,46 @@
+<dashboard hideExport="true">
+  <label>ITOps - Triage - Episodes</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+The Episode Review dashboard in IT Service Intelligence (ITSI) enables organizations to manage communications related to major business issues or incidents. Episode Review allows incident communications administrators to bring together all involved users during these episodes and establish quick and easy communication within the group. The goal of Episode Review is to restore normal service operation while minimizing impact to business operations and maintaining quality. The dashboard displays a unified view of all your service-impacting alerts as episodes in their current state.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/it-essentials.html">Splunk IT Essentials</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/itops__triage__notable_events">Notable Events</a>, </span>
+<span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+After data is ingested into ITSI from multiple data sources, it's processed through correlation searches to create notable events. ITSI generates notable events when a correlation search or multi-KPI alert meets specific conditions that you define. Notable event aggregation policies group the events into meaningful episodes, a group of events occurring as part of a larger sequence (an incident or period considered in isolation). Use Episode Review to view episode details and identify issues that might impact the performance and availability of your IT services. You can then take actions on the episodes, such as running a script, pinging a host, or creating tickets in external systems.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/EA/AggOverview">Overview of aggregation policies in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/EA/EpisodeOverview">Overview of Episode Review in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=incident&amp;search.products=1518807815929006Tats">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

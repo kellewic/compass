@@ -1,0 +1,51 @@
+<dashboard hideExport="true">
+  <label>Security - Analyze - Fraud</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Patterns of fraud are often found across different silos of both structured and unstructured machine data. Traditional anti-fraud tools can’t scale, give a narrow view that leaves gaps and struggle with flexibility around machine data. Splunk Enterprise helps with many needs of anti-fraud teams from fraud detection and monitoring, investigations, analytics and reporting, to enhancing your existing fraud tools. Gain insight into transaction and behavioral red flags over disjointed data sources. Flexibility to index relevant machine data across all data sources to search and correlate, making it easier to identify fraudulent patterns, so an organization can detect and alert on fraud in real time and act to prevent it before it adversely impacts the bottom line.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/user-behavior-analytics.html">Splunk User Behavior Analytics</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__monitor__compliance">Compliance</a>, </span>
+<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/welcome-app/security__analyze__behavior">Behavior</a>, </span>
+<span><a href="/app/welcome-app/security__analyze__machine_learning">Machine Learning</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+By indexing relevant machine data and searching and correlating it to identify the patterns of fraud, you can detect fraudulent activity, alert teams in real time, and prevent it before bottom lines are impacted.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/cyber-security/fraud-detection.html">Enterprise Fraud Monitoring</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/solution-guides/splunk-for-fraud-detection.pdf">Splunk for Fraud Detection - Solution Guide</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/customers/success-stories/global-retailer.html">Global Retailer Detects Online Fraud With Greater Visibility and Insight - Case Study</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=fraud">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

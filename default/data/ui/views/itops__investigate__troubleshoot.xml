@@ -1,0 +1,50 @@
+<dashboard hideExport="true">
+  <label>ITOps - Investigate - Troubleshoot</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Deep dives are an investigative tool to help you identify and troubleshoot issues in your IT environment in IT Service Intelligence (ITSI). Use deep dives to view KPI search results over time, zoom-in on KPI search results, and visually correlate root cause. Stack and organize deep dive lanes to create contextual views of metrics across your services. You can create swim lanes for both KPI and ad hoc searches, and you can customize the look of your swimlanes with unique graph types and colors to differentiate services and metrics.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+		      <a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>
+        </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+        <span><a href="/app/welcome-app/itops__investigate__incidents">Incidents</a>, </span>
+        <span><a href="/app/welcome-app/itops__monitor__services">Services</a>, </span>
+        <span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
+        <span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+IT Service Intelligence (ITSI) uses services as a representation of real-world IT services that you can use to monitor the health of IT systems and business processes. After you initially create one or more services, you must perform some manual configuration, including adding entity rules to filter to entities, adding KPIs to monitor the service's health, and adding service dependencies. You can then use ITSI to monitor service health, perform root-cause analysis, set up threshold-based alerts, and track compliance with organizational SLAs (service-level agreements).
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/it-service-intelligence.pdf">Splunk IT Service Intelligence - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/SI/DeepDives">Overview of deep dives in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=troubleshoot&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1518807815929006Tats&amp;search.products=1554416734780001tYXj">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel>
+      <html>
+    </html>
+    </panel>
+  </row>
+</dashboard>

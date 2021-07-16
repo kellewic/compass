@@ -1,0 +1,50 @@
+<dashboard hideExport="true">
+  <label>ITOps - Triage - Tickets</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+You can run actions on episodes either automatically using aggregation policies or manually in Episode Review. Some actions, like sending an email or pinging a host, are shipped with ITSI. You can also create tickets in external ticketing systems like ServiceNow, Remedy, or Splunk OnCall. Finally, actions can also be modular alerts that are shipped with Splunk add-ons or apps, or custom actions that you configure.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>, 
+<a target="_blank" href="https://docs.splunk.com/Documentation/AddOns/latest/ServiceNow/About">Splunk Add-on for ServiceNow</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/itops__triage__notable_events">Notable Events</a>, </span>
+<span><a href="/app/welcome-app/itops__triage__episodes">Episodes</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+After data is ingested into ITSI from multiple data sources, it's processed through correlation searches to create notable events. ITSI generates notable events when a correlation search or multi-KPI alert meets specific conditions that you define. Notable event aggregation policies group the events into meaningful episodes, a group of events occurring as part of a larger sequence (an incident or period considered in isolation). Use Episode Review to view episode details and identify issues that might impact the performance and availability of your IT services. You can then take actions on the episodes, such as running a script, pinging a host, or creating tickets in external systems.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/EA/ActionRules">Configure episode action rules in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/EA/ActionsOverview">Overview of episode ticketing integrations in ITSI - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/AddOns/released/ServiceNow/ConfigureServiceNowtointegratewithSplunkEnterprise">Configure ServiceNow to integrate with the Splunk platform - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=ticket&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1518807815929006Tats&amp;search.products=1554416734780001tYXj&amp;search.products=16034961589570012djF">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

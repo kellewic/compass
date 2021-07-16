@@ -1,0 +1,56 @@
+<dashboard hideExport="true">
+  <label>DevOps - Monitor - User Experience</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Understand the impact of problems, latency and bugs on the experience of users. Get real data from real users on every single page, resource, third-party dependency and dynamic component. Splunk's Real User Monitoring (RUM) full-fidelity ingestion and end-to-end visibility gives you a complete picture of your user's entire journey. Detect and resolve issues more quickly by simulating user transactions worldwide, with multiple browser and connectivity types. Get automated suggestions to increase performance and reliability, and get more informed on your applications’ health. Splunk Synthetic Monitoring makes it easier to improve web app experiences.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/real-user-monitoring.html">Splunk Real User Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/synthetic-monitoring.html">Splunk Synthetic Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-apm.html">Splunk Application Performance Monitoring</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/devops__investigate__incidents">Incidents</a>, </span>
+<span><a href="/app/welcome-app/devops__monitor__cloud">Cloud</a>, </span>
+<span><a href="/app/welcome-app/devops__monitor__applications">Applications</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+With Splunk Real User Monitoring, you can gain insight about the performance and health of the front-end user experience of your application. Splunk RUM collects performance metrics, web vitals, errors, and other forms of data to enable you to detect and troubleshoot problems in your application. For a complete view of your application from browser to back-end, integrate with Splunk APM. Track and monitor mission-critical user flows, business transactions, content, third-party tags, APIs and more. Splunk’s monitoring technology uses the most up-to-date browser version to collect web performance data at any frequency, from any location in the world, on any device.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/product-brief/splunk-real-user-monitoring.pdf">Splunk Real User Monitoring (RUM) - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/product-brief/splunk-synthetic-monitoring.pdf">Splunk Synthetic Monitoring - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/splunk-observability-cloud.html">Conquer Complexity at Any Scale With the New Splunk Observability Cloud - Blo</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Observability/get-started/o11y/rum.html">Monitor user experiences - Documentation</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=user%20experience&amp;search.products=1564084218064001QKuM&amp;search.products=1571157646148001eiLa&amp;search.products=1601591781565002NmQe&amp;search.products=1601591781565001Na8P&amp;search.products=1518807815929007TGlV&amp;search.products=1554416734780001tYXj">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

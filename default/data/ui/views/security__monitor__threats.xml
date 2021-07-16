@@ -1,0 +1,60 @@
+<dashboard hideExport="true">
+  <label>Security - Monitor - Threats</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Automate threat detection using machine learning so you can spend more time hunting with higher fidelity behavior-based alerts for quick review and resolution. Rapidly identify anomalous entities without human analysis across users, accounts, devices and applications. Secure against unknown threats through user and entity behavior analytics.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/cyber-security-essentials.html">Splunk Security Essentials</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/user-behavior-analytics.html">Splunk User Behavior Analytics</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/mission-control-dashboard.html">Splunk Mission Control</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__investigate__threat_hunting">Threat Hunting</a>, </span>
+<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Ingest machine data from multi-cloud and on-premises deployments for full visibility to quickly detect malicious threats in your environment. Attribute risk to users and systems, map alerts to cybersecurity frameworks, and trigger alerts when risk exceeds thresholds.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/splunk-security-essentials.pdf">Splunk Security Essentials - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/splunk-mission-control.pdf">Splunk Mission Control - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/splunk-for-advanced-analytics-and-threat-detection-tech-brief.pdf">Splunk for Advanced Analytics and Threat Detection - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/security/a-unified-security-operations-platform-splunk-mission-control.html">A Unified Security Operations Platform: Splunk Mission Control - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ES/6.5.1/Admin/Addthreatintel">Add threat intelligence to Splunk Enterprise Security - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/UBA/5.0.4.1/User/Threats">User Behavior Analytics - Review threats and anomalies in your environment - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=threat&amp;search.products=1518807815929005TSAa&amp;search.products=1518807815929004Tieu">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

@@ -1,0 +1,68 @@
+<dashboard hideExport="true">
+  <label>DevOps - Investigate - Incidents</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Empower teams with automated incident response that gets incidents and alerts to the right teams before it’s too late. Reduce mean time to acknowledgement and resolution (MTTA and MTTR), and improve collaboration across all groups. Log analysis across cloud-native applications and cloud environments means you can view logs from key DevOps sources in minutes, optimize data sources and workflows, all in one place and with no code. Rapidly explore context-rich logs with a point-and-click experience.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.htm">Splunk Infrastructure Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/log-observer.html">Splunk Log Observer</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-on-call.html">Splunk On-Call</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/devops__investigate__troubleshoot">Troubleshoot</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Receive genuine alert conditions, so you can find out in seconds that there’s a problem you need to pay attention to. Time-based visualizations, event overlays, and responsive time controls mean it’s obvious when a problem starts. Dynamic dimension-based filtering, grouping, and aggregation means you can check for trends quickly. Using Splunk features like the clipboard, you can collect all the evidence you need to pinpoint the source of the problem based on the order of events and the scope of the systems affected.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/devops/incident-response.html">Make on-call suck less</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.observability.splunk.com/en_us/apm/faster-smarter-resolution-the-incident-response-guide-for-kubernetes.html">Faster, Smarter Resolution: The Incident Response Guide for Kubernetes</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.observability.splunk.com/en_us/log-investigation/why-devops-matters.html">Why DevOps Matters: A Guide for Collaborative Transparency in Incident Management</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/product-brief/splunk-log-observer.pdf">Splunk Log Observer - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/2019-Splunk-IT-Splunk%20and%20VictorOps.pdf">Splunk + VictorOps - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/splunk-observability-cloud.html">Conquer Complexity at Any Scale With the New Splunk Observability Cloud - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://victorops.com/blog/incident-response-framework-for-ci-cd-pipelines">Adding an Incident Response Framework to Your CI/CD Pipelines - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://victorops.com/blog/the-devops-model-rapid-software-delivery-and-incident-management">The DevOps Model: Rapid Software Delivery and Incident Management - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/app-integrations/on-call.html">Splunk On-Call Integrations - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=incident&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1554416734780001tYXj&amp;search.products=1601591781565002NmQe&amp;search.products=1571157646148001eiLa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

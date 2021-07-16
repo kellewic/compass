@@ -1,0 +1,73 @@
+<dashboard hideExport="true">
+  <label>Security - Analyze - Machine Learning</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Machine learning is the field of computer science working to develop computer systems that can autonomously learn from experience — specifically, by processing the data they receive — and improve the performance of specific tasks. The term “machine learning” is often used interchangeably with the term “artificial intelligence,” but machine learning is a subfield of AI.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/user-behavior-analytics.html">Splunk User Behavior Analytics</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/stream-processing.html">Splunk Data Stream Processor</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise/machine-learning.html">Splunk Machine Learning Toolkit</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/all__collect__streaming">Streaming</a>, </span>
+<span><a href="/app/welcome-app/security__monitor__threats">Threats</a>, </span>
+<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/welcome-app/security__analyze__fraud">Fraud</a>, </span>
+<span><a href="/app/welcome-app/security__analyze__ai">AI</a>, </span>
+<span><a href="/app/welcome-app/security__analyze__behavior">Behavior</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Machine learning requires data, and a lot of it, to work successfully. But even more important than the quantity of data is its quality. “Clean data is better than big data” is a popular refrain among data scientists. Data that’s unstructured or disorganized won’t provide the necessary business insights no matter how much of it you have. New data is also a requirement. Given the rapid changes in most industries, reams of data even just a handful of years old may hold no relevance to current trends in your business and probably won’t provide you with any predictive value.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/data-insider/ai-and-machine-learning.html">What is Artificial Intelligence and Machine Learning? - Data Insider</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-learning-on-the-stream.pdf">The Essential Guide to Machine Learning on the Stream</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/splunk-machine-learning-environment.pdf">Splunk Machine Learning Environment (SMLE) - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/platform/machine-learning-guide-choosing-the-right-workflow.html">Machine Learning Guide: Choosing the Right Workflow - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/platform/get-to-know-splunk-machine-learning-environment-smle.html">Get to Know Splunk Machine Learning Environment (SMLE) - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/platform/threat-research-at-splunk-using-smle.html">Threat Hunting with ML: Another Reason to SMLE - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/DSP/latest/User/About">Splunk Data Stream Processor - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/UBA/latest/User/About">Splunk User Behavior Analytics - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/MLApp/latest/User/AboutMLTK">Splunk Machine Learning Toolkit - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=machine%20learning&amp;search.products=1524857772187001kLHz&amp;search.products=1518807815929004Tieu&amp;search.products=1555708480629001zHpW&amp;search.products=splunkphantom&amp;search.products=1518807815929005TSAa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

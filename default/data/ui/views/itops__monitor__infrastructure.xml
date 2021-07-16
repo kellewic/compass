@@ -1,0 +1,70 @@
+<dashboard hideExport="true">
+  <label>ITOps - Monitor - Infrastructure</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+The Infrastructure Overview provides a holistic view of all the active entities in your environment as well as the health of those entities across various platforms. Leverage this view to monitor the health of your overall system and quickly understand the availability and performance of your server infrastructure.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+		  <a target="_blank" href="https://www.splunk.com/en_us/software/it-essentials.html">Splunk IT Essentials</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>
+          </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+        <span><a href="/app/welcome-app/itops__investigate__incidents">Incidents</a>, </span>
+        <span><a href="/app/welcome-app/itops__monitor__services">Services</a>, </span>
+        <span><a href="/app/welcome-app/itops__monitor__cloud">Cloud</a>, </span>
+        <span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
+        <span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Splunk IT Service Intelligence (ITSI) content packs provide out-of-the-box content that you can use to quickly set up your Splunk IT Service Intelligence (ITSI) or IT Essentials environment. This content can include preconfigured KPI base searches, service templates, saved glass tables, and other objects for use within ITSI or ITE Work.
+        </p>
+        <p>
+Once installed, the objects within a content pack are completely configurable. If you want to do things like change a search's frequency, adjust latency, or change calculation methods, just edit that object directly. Most importantly, many content packs include service templates as a way to easily link one of your existing services to a predefined set of KPIs.
+        </p>
+        <p>
+Most content packs process data collected through the use of Splunk add-ons. Add-ons collect host, network, and other data from computers that you install them on and map that data to a data model. Add-ons power the data underlying the metrics for each content pack.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/it-service-intelligence.pdf">Splunk IT Service Intelligence - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/it/why-you-should-migrate-from-legacy-apps-to-it-essentials-work.html">Why You Should Migrate from Legacy Apps to IT Essentials Work - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/it/get-the-most-out-of-splunk-infrastructure-monitoring-and-splunk-itsi.html">Get The Most Out of Splunk Infrastructure Monitoring and Splunk ITSI - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/Entity/InfraOverview">About the Infrastructure Overview in ITSI - Documentation</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSICP/latest/Config/AboutIM">About the Content Pack for Splunk Infrastructure Monitoring - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ITSICP/current/Config/About">Overview of content packs and the ITSI Content Library - Documentation</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=infrastructure&amp;search.products=1518807815929006Tats">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel>
+      <html>
+    </html>
+    </panel>
+  </row>
+</dashboard>

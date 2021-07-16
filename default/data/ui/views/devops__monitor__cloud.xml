@@ -1,0 +1,61 @@
+<dashboard hideExport="true">
+  <label>DevOps - Monitor - Cloud</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Analyze performance across hundreds of thousands of ephemeral components, multiple deployment environments, application versions and billions of events. Achieve DevOps agility with monitoring-as-code. Drive closed-loop automation such as auto-scaling to ensure a flawless end-user experience. Infrastructure and application performance are interdependent. To see the full picture, Splunk provides seamless correlation between cloud infrastructure and the microservices running on top of it. If your application acts out because of memory leakage, a noisy neighbor container or any other infrastructure-related issue, Splunk will let you know. To complete the picture, in-context access to Splunk logs and events enable deeper troubleshooting and root cause analysis.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.htm">Splunk Infrastructure Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-apm.html">Splunk Application Performance Monitoring</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/devops__investigate__incidents">Incidents</a>, </span>
+<span><a href="/app/welcome-app/devops__monitor__applications">Applications</a>, </span>
+<span><a href="/app/welcome-app/devops__monitor__user_experience">User Experience</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/devops__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+To collect metrics from an infrastructure resource Splunk uses an OpenTelemetry Collector to get higher-resolution data than from cloud integrations. Once data is being sent from supported cloud services, hosts, and containers. This data populates built-in experiences, including the Infrastructure Overview, which you can use to get started with monitoring and troubleshooting your infrastructure.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring/features.html">Splunk Infrastructure Monitoring Features</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/data-sheets/splunk-infrastructure-monitoring.pdf">Splunk Infrastructure Monitoring - Data Sheet</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/monitor-google-cloud-functions-in-real-time-with-signalfx.html">Monitor Google Cloud Functions in Real-Time with Splunk Infrastructure Monitoring - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/splunk-observability-cloud.html">Conquer Complexity at Any Scale With the New Splunk Observability Cloud - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Observability/get-started/o11y/infrastructure.html">Monitor your infrastructure - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/app-integrations.html">Splunk Observability Cloud Integrations - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=cloud&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1554416734780001tYXj&amp;search.products=1601591781565002NmQe&amp;search.products=1571157646148001eiLa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

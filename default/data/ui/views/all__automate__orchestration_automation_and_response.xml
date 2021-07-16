@@ -1,0 +1,65 @@
+<dashboard hideExport="true">
+  <label>All - Automate - Orchestration, Automation, and Response</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Combine infrastructure orchestration, playbook automation and case management capabilities to streamline your team, processes and tools. Automate repetitive tasks to force multiply your team’s efforts and better focus your attention on mission-critical decisions. Reduce dwell times with automated investigations. Reduce response times with playbooks that execute at machine speed. Orchestrate operations from the palm of your hand. Respond faster than ever because you’re reachable from anywhere. And run playbooks, triage events and collaborate with colleagues on the go.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+		      <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html">Splunk SOAR</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/stream-processing.html">Splunk Data Stream Processor</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-on-call.html">Splunk On-Call</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/mission-control-dashboard.html">Splunk Mission Control</a>
+          </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+        <span><a href="/app/welcome-app/discover">All</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+While Splunk has developed a Security Orchestration, Automation, and Response (SOAR), it can be used for non-security use cases as well. There are hundreds of pre-built apps and integrations and you can even develop your own using Python.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/splunk-mission-control.pdf">Splunk Mission Control - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/2019-Splunk-IT-Splunk%20and%20VictorOps.pdf">Splunk On-Call Capabilities - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/security/automation-made-easy-what-s-new-with-splunk-phantom.html">Automation Made Easy: What’s New with Splunk Phantom - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/security/automating-with-splunk-phantom-how-norlys-does-it.html">Automating With Splunk Phantom: How Norlys Does It - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/Phantom/latest/User/Intro">Splunk SOAR - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/Phantom/latest/DevelopApps/Overview">Develop Apps for Splunk SOAR - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation/apps-and-integrations.html">Splunk SOAR Apps &amp; Integrations - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=automation">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel>
+      <html>
+    </html>
+    </panel>
+  </row>
+</dashboard>

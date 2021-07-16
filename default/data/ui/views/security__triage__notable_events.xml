@@ -1,0 +1,59 @@
+<dashboard hideExport="true">
+  <label>Security - Triage - Notable Events</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Splunk Enterprise Security detects patterns in your data and automatically reviews events for security-relevant incidents using correlation searches. When a correlation search detects a suspicious pattern, the correlation search creates a new notable event. A notable event represents one or more anomalous incidents detected by a correlation search across data sources. For example, a notable event can represent:
+<ul>
+  <li>The repeated occurrence of an abnormal spike in network usage over a period of time</li>
+  <li>A single occurrence of unauthorized access to a system</li>
+  <li>A host communicating with a server on a known threat list</li>
+</ul>
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/enterprise-security.html">Splunk Enterprise Security</a>, 
+<a target="_blank" href="https://docs.splunk.com/Documentation/PCI/latest/User/Overview">Splunk App for PCI</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/mission-control-dashboard.html">Splunk Mission Control</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/security__investigate__incidents">Incidents</a>, </span>
+<span><a href="/app/welcome-app/security__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/welcome-app/security__triage__tickets">Tickets</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Use the Incident Review dashboard as part of your incident triage workflow. You can monitor notable events and the actions that analysts take to resolve the issues that triggered a notable event. You can also speed up your notable event triage with search filters, tagging, and sorting.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/splunk-mission-control.pdf">Splunk Mission Control - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/security/a-unified-security-operations-platform-splunk-mission-control.html">A Unified Security Operations Platform: Splunk Mission Control - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://docs.splunk.com/Documentation/ES/latest/User/IncidentReviewdashboard">Overview of Incident Review in Splunk ES - Documentation</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://dev.splunk.com/enterprise/docs/devtools/enterprisesecurity/notableeventsplunkes/">Notable Event framework in Splunk ES - Documentation</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=notable%20event&amp;search.products=1518807815929004Tieu&amp;search.products=1555708480629001zHpW&amp;search.products=1518807815929005TSAa&amp;search.products=1554416734780001tYXj#/">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

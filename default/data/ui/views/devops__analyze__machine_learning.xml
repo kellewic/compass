@@ -1,0 +1,49 @@
+<dashboard hideExport="true">
+  <label>DevOps - Analyze - Machine Learning</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Machine learning is the field of computer science working to develop computer systems that can autonomously learn from experience — specifically, by processing the data they receive — and improve the performance of specific tasks. The term “machine learning” is often used interchangeably with the term “artificial intelligence,” but machine learning is a subfield of AI.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/infrastructure-monitoring.htm">Splunk Infrastructure Monitoring</a>, 
+<a target="_blank" href="https://www.splunk.com/en_us/software/splunk-apm.html">Splunk Application Performance Monitoring</a>
+         </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+<span><a href="/app/welcome-app/devops__analyze__aiops">AIOps</a>, </span>
+<span><a href="/app/welcome-app/devops__analyze__insights">Insights</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Programmable data science models and advanced statistics, enable predictive analysis, high cardinality slice and dice, rich analysis of business metrics, and automated issue resolution. Alert on patterns and identify anomalies in seconds, instead of minutes as with legacy batch-based monitoring tools that can result in lengthy downtime or persistent performance issues. Point and click alert conditions with dynamic thresholds and automatic baselining that leverages data science instead of static thresholds for no-noise alerts. Preview these alerts to simulate and fine-tune.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/data-insider/ai-and-machine-learning.html">What is Artificial Intelligence and Machine Learning? - Data Insider</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/data-sheets/splunk-infrastructure-monitoring.pdf">Splunk Infrastructure Monitoring - Data Sheet</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/splunk-observability-cloud.html">Conquer Complexity at Any Scale With the New Splunk Observability Cloud - Blog</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=learning&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1554416734780001tYXj&amp;search.products=1601591781565002NmQe&amp;search.products=1571157646148001eiLa">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel><html></html></panel>
+  </row>
+</dashboard>

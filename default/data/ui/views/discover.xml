@@ -1,0 +1,168 @@
+<dashboard>
+  <label>Discover</label>
+  <description>The Data-to-Everything&#8482; Platform, Powering Security, IT and DevOps.</description>
+  <init>
+    <set token="separator">&#8226;</set>
+    <set token="img_style">position: absolute; z-index: 2; top:5; left:0; margin-left:10px</set>
+    <set token="img_height">40</set>
+    <set token="img_width">40</set>
+  </init>
+  <row id="top_header">
+    <panel>
+      <html>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="pillar-header">ITOps</div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="pillar-header">Security</div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="pillar-header">DevOps</div>
+      </html>
+    </panel>
+  </row>
+
+  <row id="collect">
+    <panel>
+      <html>
+        <div class="action-header">
+          <img src="/static/app/welcome-app/any_machine_data.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          Collect
+        </div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/all__collect__streaming">Streaming</a> $separator$ <a href="/app/welcome-app/all__collect__forwarding">Forwarding</a></div>
+      </html>
+    </panel>
+  </row>
+  
+  <row id="investigate">
+    <panel>
+      <html>
+        <div class="action-header">
+          <img src="/static/app/welcome-app/find_problems_faster.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          Investigate
+        </div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/itops__investigate__troubleshoot">Troubleshoot</a> $separator$ <a href="/app/welcome-app/itops__investigate__incidents">Incidents</a></div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/security__investigate__threat_hunting">Threat Hunting</a> $separator$ <a href="/app/welcome-app/security__investigate__incidents">Incidents</a> $separator$ <a href="/app/welcome-app/security__investigate__forensics">Forensics</a></div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/devops__investigate__troubleshoot">Troubleshoot</a> $separator$ <a href="/app/welcome-app/devops__investigate__incidents">Incidents</a></div>
+      </html>
+    </panel>
+  </row>
+  
+  <row id="monitor">
+    <panel>
+      <html>
+        <div class="action-header">
+          <img src="/static/app/welcome-app/monitor_diag.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          Monitor
+        </div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/itops__monitor__infrastructure">Infrastructure</a> $separator$ <a href="/app/welcome-app/itops__monitor__cloud">Cloud</a> $separator$ <a href="/app/welcome-app/itops__monitor__services">Services</a></div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/security__monitor__threats">Threats</a> $separator$ <a href="/app/welcome-app/security__monitor__compliance">Compliance</a> $separator$ <a href="/app/welcome-app/security__monitor__risk">Risk</a></div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/devops__monitor__cloud">Cloud</a> $separator$ <a href="/app/welcome-app/devops__monitor__applications">Applications</a> $separator$ <a href="/app/welcome-app/devops__monitor__user_experience">User Experience</a></div>
+      </html>
+    </panel>
+  </row>
+  
+  <row id="triage">
+    <panel>
+      <html>
+        <div class="action-header">
+          <img src="/static/app/welcome-app/prioritize_act.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          Triage
+        </div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/itops__triage__alerts">Alerts</a> $separator$ <a href="/app/welcome-app/itops__triage__notable_events">Notable Events</a> $separator$ <a href="/app/welcome-app/itops__triage__episodes">Episodes</a> $separator$ <a href="/app/welcome-app/itops__triage__tickets">Tickets</a></div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/security__triage__alerts">Alerts</a> $separator$ <a href="/app/welcome-app/security__triage__notable_events">Notable Events</a> $separator$ <a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a> $separator$ <a href="/app/welcome-app/security__triage__tickets">Tickets</a></div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/devops__triage__alerts">Alerts</a> $separator$ <a href="/app/welcome-app/devops__triage__tickets">Tickets</a></div>
+      </html>
+    </panel>
+  </row>
+  
+  <row id="analyze">
+    <panel>
+      <html>
+        <div class="action-header">
+          <img src="/static/app/welcome-app/ml_analytics.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          Analyze
+        </div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/itops__analyze__aiops">AIOps</a> $separator$ <a href="/app/welcome-app/itops__analyze__machine_learning">Machine Learning</a> $separator$ <a href="/app/welcome-app/itops__analyze__insights">Insights</a></div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/security__analyze__ai">AI</a> $separator$ <a href="/app/welcome-app/security__analyze__machine_learning">Machine Learning</a> $separator$ <a href="/app/welcome-app/security__analyze__behavior">Behavior</a> $separator$ <a href="/app/welcome-app/security__analyze__fraud">Fraud</a></div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/devops__analyze__aiops">AIOps</a> $separator$ <a href="/app/welcome-app/devops__analyze__machine_learning">Machine Learning</a> $separator$ <a href="/app/welcome-app/devops__analyze__insights">Insights</a></div>
+      </html>
+    </panel>
+  </row>
+  
+  <row id="automate">
+    <panel>
+      <html>
+        <div class="action-header">
+          <img src="/static/app/welcome-app/it_ops_mgmt.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          Automate
+        </div>
+      </html>
+    </panel>
+    <panel>
+      <html>
+        <div class="action-link"><a href="/app/welcome-app/all__automate__orchestration_automation_and_response">Orchestration, Automation, and Response</a></div>
+      </html>
+    </panel>
+  </row>
+  
+</dashboard>

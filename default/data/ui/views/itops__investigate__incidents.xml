@@ -1,0 +1,60 @@
+<dashboard hideExport="true">
+  <label>ITOps - Investigate - Incidents</label>
+  <row id="main">
+    <panel>
+      <html>
+      <div class="overview">
+Splunk IT Service Intelligence (ITSI) is an analytics and IT management solution that empowers teams to predict incidents before they impact customers. ITSI correlates and applies machine learning intelligence to data collected from monitoring sources for 360 degree service visibility, predictive analytics and streamlined alert management. Reduce MTTR with real-time event correlation, automated incident prioritization and integrations with ITSM and orchestration tools. Protect business service-level agreements with dashboards to monitor service health, troubleshoot alerts and perform root cause analysis.
+      </div>
+      <div class="platform">
+        <span class="bold">Platform: </span>
+        <span>
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-enterprise.html">Splunk Enterprise</a>, 
+		      <a target="_blank" href="https://www.splunk.com/en_us/software/it-essentials.html">Splunk IT Essentials</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/it-service-intelligence.html">Splunk IT Service Intelligence</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html">Splunk SOAR</a>, 
+          <a target="_blank" href="https://www.splunk.com/en_us/software/splunk-on-call.html">Splunk On-Call</a>
+          </span>
+      </div>
+      <div class="related">
+        <span class="bold">Related: </span>
+        <span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
+        <span><a href="/app/welcome-app/itops__triage__notable_events">Notable Events</a>, </span>
+        <span><a href="/app/welcome-app/itops__triage__episodes">Episodes</a>, </span>
+        <span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a>, </span>
+        <span><a href="/app/welcome-app/itops__analyze__machine_learning">Machine Learning</a></span>
+      </div>
+      <div class="basics">
+        <h1>The Basics</h1>
+        <p>
+Collect and enrich events from multiple sources into a single alerting framework. Real-time, automated event correlation triggers alerts as data enters the system, using out-of-the-box (OOTB) machine learning policies for immediate noise reduction. Incidents are automatically prioritized by service score and impact. Trigger service ticketing, on-call response or automated playbooks directly from your incident review for fast incident resolution.
+        </p>
+      </div>
+      <div class="help">
+        <h1>Help, Guidance, and More Information</h1>
+        <ul>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/devops/incident-response.html">Make on-call suck less</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/it-service-intelligence.pdf">Splunk IT Service Intelligence - Product Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/2019-Splunk-IT-Splunk%20and%20VictorOps.pdf">Splunk + VictorOps - Tech Brief</a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.splunk.com/en_us/app-integrations/on-call.html">Splunk On-Call Integrations - Documentation</a>
+            </li>
+          <li>
+              <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=incident&amp;search.products=option_1584675302134&amp;search.products=1601591781565001Na8P&amp;search.products=1518807815929006Tats&amp;search.products=1554416734780001tYXj">Splunk .conf Online</a>
+          </li>
+        </ul>
+      </div>
+    </html>
+    </panel>
+    <panel>
+      <html>
+    </html>
+    </panel>
+  </row>
+</dashboard>
