@@ -29,5 +29,5 @@ This app is purely visual and runs no searches. It does pull some content dynami
 
 ### Support
 
-This is an open source project with a [public repository](https://github.com/kellewic/splunk-welcome-app). Support is on a best effort basis via [GitHub issues](https://github.com/kellewic/splunk-welcome-app/issues).
+This is an open source project with a [public repository](https://github.com/kellewic/compass). Support is on a best effort basis via [GitHub issues](https://github.com/kellewic/compass/issues).
 
