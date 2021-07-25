@@ -1,4 +1,4 @@
-<dashboard hideExport="true">
+<dashboard hideExport="true" hideEdit="true">
   <label>Security - Investigate - Threat Hunting</label>
   <row id="main">
     <panel>

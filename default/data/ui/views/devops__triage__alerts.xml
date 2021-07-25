@@ -1,4 +1,4 @@
-<dashboard hideExport="true">
+<dashboard hideExport="true" hideEdit="true">
   <label>DevOps - Triage - Alerts</label>
   <row id="main">
     <panel>

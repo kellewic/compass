@@ -1,4 +1,4 @@
-<dashboard hideExport="true">
+<dashboard hideExport="true" hideEdit="true">
   <label>ITOps - Analyze - Insights</label>
   <row id="main">
     <panel>

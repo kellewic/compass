@@ -1,4 +1,4 @@
-<dashboard hideExport="true">
+<dashboard hideExport="true" hideTitle="true">
   <label>Discover</label>
   <description>The Data-to-Everything&#8482; Platform, Powering Security, IT and DevOps.</description>
   <init>
