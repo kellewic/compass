@@ -1,11 +1,11 @@
 {
   "schemaVersion": "2.0.0",
   "info": {
-    "title": "Welcome App",
+    "title": "Compass",
     "id": {
       "group": null,
-      "name": "welcome-app",
-      "version": "0.7.0"
+      "name": "compass",
+      "version": "0.7.5"
     },
     "author": [
       {
@@ -15,7 +15,7 @@
       }
     ],
     "releaseDate": null,
-    "description": "Enablement for Splunk users",
+    "description": "Helping you find your way across the Splunk landscape",
     "classification": {
       "intendedAudience": "All",
       "categories": [],
