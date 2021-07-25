@@ -35,6 +35,9 @@ By collecting all traces, instead of sampling, no anomaly goes undetected. Wheth
               <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/application-performance-monitoring-tool.pdf">Is Your Application Performance Monitoring Tool Cutting Corners? - Tech Brief</a>
           </li>
           <li>
+              <a target="_blank" href="https://lantern.splunk.com/Observability_Use_Case_Guidance/Software_Development">Software Development - Splunk Lantern</a>
+          </li>
+          <li>
               <a target="_blank" href="https://www.splunk.com/en_us/blog/devops/announcing-signalfx-microservices-apm.html">Reimagining APM for the Cloud-Native World: Introducing Splunk APM - Blog</a>
           </li>
           <li>

@@ -41,6 +41,9 @@ Most content packs process data collected through the use of Splunk add-ons. Add
               <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/it-service-intelligence.pdf">Splunk IT Service Intelligence - Product Brief</a>
           </li>
           <li>
+              <a target="_blank" href="https://lantern.splunk.com/IT_Use_Case_Guidance/Infrastructure_Performance_Monitoring">Infrastructure Performance Monitoring - Splunk Lantern</a>
+          </li>
+          <li>
               <a target="_blank" href="https://www.splunk.com/en_us/blog/it/why-you-should-migrate-from-legacy-apps-to-it-essentials-work.html">Why You Should Migrate from Legacy Apps to IT Essentials Work - Blog</a>
           </li>
           <li>

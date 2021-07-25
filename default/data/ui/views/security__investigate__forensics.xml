@@ -35,6 +35,9 @@ Ingest machine data from multi-cloud and on-premises deployments for full visibi
               <a target="_blank" href="https://www.splunk.com/en_us/resources/videos/powering-forensic-research-at-purdue-with-splunk.html">Powering Forensic Research at Purdue with Splunk - Video</a>
           </li>
           <li>
+              <a target="_blank" href="https://lantern.splunk.com/Security_Use_Case_Guidance/Security_Investigations">Security Investigations - Splunk Lantern</a>
+          </li>
+          <li>
               <a target="_blank" href="https://conf.splunk.com/watch/conf-online.html?search=forensics">Splunk .conf Online</a>
           </li>
         </ul>

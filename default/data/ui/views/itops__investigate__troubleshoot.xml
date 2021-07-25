@@ -33,6 +33,9 @@ IT Service Intelligence (ITSI) uses services as a representation of real-world I
               <a target="_blank" href="https://www.splunk.com/pdfs/product-briefs/it-service-intelligence.pdf">Splunk IT Service Intelligence - Product Brief</a>
           </li>
           <li>
+              <a target="_blank" href="https://lantern.splunk.com/IT_Use_Case_Guidance/IT_Investigation_and_Troubleshooting">IT Investigation and Troubleshooting - Splunk Lantern</a>
+          </li>
+          <li>
               <a target="_blank" href="https://docs.splunk.com/Documentation/ITSI/latest/SI/DeepDives">Overview of deep dives in ITSI - Documentation</a>
           </li>
           <li>

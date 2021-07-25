@@ -40,6 +40,9 @@ Intentional hunting often relies on knowing various attacker techniques and appl
               <a target="_blank" href="https://www.splunk.com/en_us/pdfs/resources/solution-guide/embark-on-your-risk-based-alerting-journey-with-splunk-107-SG-web.pdf">Embark on Your Risk-Based Alerting Journey With Splunk - Solution Guide</a>
           </li>
           <li>
+              <a target="_blank" href="https://lantern.splunk.com/Security_Use_Case_Guidance/Threat_Intelligence_and_Threat_Hunting">Threat Intelligence and Threat Hunting - Splunk Lantern</a>
+          </li>
+          <li>
               <a target="_blank" href="https://www.splunk.com/en_us/blog/platform/threat-research-at-splunk-using-smle.html">Threat Hunting with ML: Another Reason to SMLE - Blog</a>
           </li>
           <li>

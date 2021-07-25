@@ -35,6 +35,9 @@ Data integrity is ensured via hardened deployments and comprehensive auditing an
               <a target="_blank" href="https://www.splunk.com/pdfs/solution-guides/splunk-for-healthcare.pdf">Splunk for Healthcare - Solution Guide</a>
           </li>
           <li>
+              <a target="_blank" href="https://lantern.splunk.com/Security_Use_Case_Guidance/Compliance_and_Data_Privacy">Compliance and Data Privacy - Splunk Lantern</a>
+          </li>
+          <li>
               <a target="_blank" href="https://docs.splunk.com/Documentation/PCI/4.5.0/User/Overview">Overview of the Splunk App for PCI Compliance - Documentation</a>
           </li>
           <li>

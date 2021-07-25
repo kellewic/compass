@@ -41,6 +41,9 @@ Connect Observability Cloud to your cloud service provider to collect data from 
               <a target="_blank" href="https://www.splunk.com/pdfs/data-sheets/splunk-infrastructure-monitoring.pdf">Splunk Infrastructure Monitoring - Data Sheet</a>
           </li>
           <li>
+              <a target="_blank" href="https://lantern.splunk.com/IT_Use_Case_Guidance/Cloud_Migration_and_Monitoring">Cloud Migration and Monitoring - Splunk Lantern</a>
+          </li>
+          <li>
               <a target="_blank" href="https://docs.splunk.com/Observability/get-started/welcome.html#nav-Welcome-to-Splunk-Observability-Cloud">Splunk Observability Cloud - Documentation</a>
             </li>
           <li>

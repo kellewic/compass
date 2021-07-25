@@ -49,6 +49,9 @@ A security incident is a violation or imminent threat of violation of computer s
               <a target="_blank" href="https://www.splunk.com/pdfs/technical-briefs/2019-Splunk-IT-Splunk%20and%20VictorOps.pdf">Splunk + VictorOps - Tech Brief</a>
           </li>
           <li>
+              <a target="_blank" href="https://lantern.splunk.com/Security_Use_Case_Guidance/Security_Investigations">Security Investigations - Splunk Lantern</a>
+          </li>
+          <li>
               <a target="_blank" href="https://www.splunk.com/en_us/blog/security/a-unified-security-operations-platform-splunk-mission-control.html">A Unified Security Operations Platform: Splunk Mission Control - Blog</a>
           </li>
           <li>
