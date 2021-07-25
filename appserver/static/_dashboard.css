@@ -1,4 +1,3 @@
-/* CSS for main page */
 #top_header div:first-of-type {
 	background-color: rgb(242, 244, 245);
 }
@@ -122,5 +121,4 @@ div.action-header img {
     color: #3c444d;
     text-rendering: optimizelegibility;
 }
-
 
