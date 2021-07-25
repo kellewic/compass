@@ -18,7 +18,7 @@ Combine infrastructure orchestration, playbook automation and case management ca
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-        <span><a href="/app/welcome-app/discover">All</a></span>
+        <span><a href="/app/$env:app$/discover">All</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

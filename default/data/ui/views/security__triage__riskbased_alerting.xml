@@ -17,9 +17,9 @@ Reduce alert volume and enhance security operations. Improve detection of sophis
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/security__monitor__threats">Threats</a>, </span>
-<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
-<span><a href="/app/welcome-app/security__triage__tickets">Tickets</a></span>
+<span><a href="/app/$env:app$/security__monitor__threats">Threats</a>, </span>
+<span><a href="/app/$env:app$/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/$env:app$/security__triage__tickets">Tickets</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

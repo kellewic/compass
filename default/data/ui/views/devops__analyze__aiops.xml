@@ -18,8 +18,8 @@ Artificial intelligence (AI) is the ability of machines to observe, think and re
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/devops__analyze__machine_learning">Machine Learning</a>, </span>
-<span><a href="/app/welcome-app/devops__analyze__insights">Insights</a></span>
+<span><a href="/app/$env:app$/devops__analyze__machine_learning">Machine Learning</a>, </span>
+<span><a href="/app/$env:app$/devops__analyze__insights">Insights</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

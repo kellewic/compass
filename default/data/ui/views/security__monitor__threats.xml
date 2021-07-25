@@ -18,8 +18,8 @@ Automate threat detection using machine learning so you can spend more time hunt
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/security__investigate__threat_hunting">Threat Hunting</a>, </span>
-<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
+<span><a href="/app/$env:app$/security__investigate__threat_hunting">Threat Hunting</a>, </span>
+<span><a href="/app/$env:app$/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

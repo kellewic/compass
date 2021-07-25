@@ -19,7 +19,7 @@ Splunk can automate stitching hundreds of anomalies into a single threat to simp
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/security__monitor__threats">Threats</a></span>
+<span><a href="/app/$env:app$/security__monitor__threats">Threats</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

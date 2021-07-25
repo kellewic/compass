@@ -16,11 +16,11 @@ The Infrastructure Overview provides a holistic view of all the active entities 
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-        <span><a href="/app/welcome-app/itops__investigate__incidents">Incidents</a>, </span>
-        <span><a href="/app/welcome-app/itops__monitor__services">Services</a>, </span>
-        <span><a href="/app/welcome-app/itops__monitor__cloud">Cloud</a>, </span>
-        <span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
-        <span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a></span>
+        <span><a href="/app/$env:app$/itops__investigate__incidents">Incidents</a>, </span>
+        <span><a href="/app/$env:app$/itops__monitor__services">Services</a>, </span>
+        <span><a href="/app/$env:app$/itops__monitor__cloud">Cloud</a>, </span>
+        <span><a href="/app/$env:app$/itops__triage__alerts">Alerts</a>, </span>
+        <span><a href="/app/$env:app$/itops__triage__tickets">Tickets</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

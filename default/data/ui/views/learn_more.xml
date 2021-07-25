@@ -1,9 +1,9 @@
-<dashboard>
+<dashboard hideExport="true">
   <label>Learn More</label>
   <row>
     <panel>
       <html>
-          <h2 style="font-weight: bold !important">Industry Resources</h2>
+          <span class="learn-more-panel-title">Industry Resources</span>
           <ul>
             <li><a target="_blank" href="https://www.splunk.com/en_us/data-insider.html">Splunk Data Insider</a> - Focused primers on top technology topics</li>
             <li><a target="_blank" href="https://www.splunk.com/en_us/resources.html">Splunk Resources</a> - Analyst Reports, E-Books, White Papers and More</li>
@@ -12,7 +12,7 @@
     </panel>
     <panel>
       <html>
-          <h2 style="font-weight: bold !important">Enage the Community</h2>
+          <span class="learn-more-panel-title">Enage the Community</span>
           <ul>
             <li><a target="_blank" href="https://conf.splunk.com/">Splunk .conf</a></li>
             <li><a target="_blank" href="https://www.splunk.com/en_us/about-us/events.html">Splunk Events</a> - Gain new skills, expand your network and connect with the Splunk community</li>
@@ -25,7 +25,7 @@
   <row>
     <panel>
       <html>
-          <h2 style="font-weight: bold !important">Become An Expert</h2>
+          <span class="learn-more-panel-title">Become An Expert</span>
           <ul>
             <li><a target="_blank" href="https://www.splunk.com/en_us/training.html">Splunk Training + Certification</a> - Get certified to become a Splunk Expert</li>
             <li><a target="_blank" href="https://docs.splunk.com/Documentation">Splunk Documentation</a> - Find answers and guidance on how to use Splunk</li>
@@ -34,7 +34,7 @@
     </panel>
     <panel>
       <html>
-          <h2 style="font-weight: bold !important">Create Applications</h2>
+          <span class="learn-more-panel-title">Create Applications</span>
           <ul>
             <li><a target="_blank" href="https://dev.splunk.com/">Splunk Developer Program</a> - Create your own Splunk apps</li>
             <li><a target="_blank" href="https://splunkbase.splunk.com/">Splunkbase</a> - See Splunk’s 2000+ apps and add-ons</li>
@@ -45,7 +45,7 @@
   <row>
     <panel>
       <html>
-          <h2 style="font-weight: bold !important">Stay Up To Date</h2>
+          <span class="learn-more-panel-title">Stay Up To Date</span>
           <ul>
             <li><a target="_blank" href="https://www.splunk.com/en_us/blog/platform.html">Splunk Blogs (Platform)</a></li>
             <li><a target="_blank" href="https://www.splunk.com/en_us/blog/tips-and-tricks.html">Splunk Blogs (Tips &amp; Tricks)</a></li>
@@ -57,7 +57,7 @@
     </panel>
     <panel>
       <html>
-          <h2 style="font-weight: bold !important">We're Here To Help</h2>
+          <span class="learn-more-panel-title">We're Here To Help</span>
           <ul>
             <li><a target="_blank" href="https://www.splunk.com/en_us/customer-success.html">Splunk Customer Success</a> - Get specialized service and support</li>
             <li><a target="_blank" href="https://lantern.splunk.com/">Splunk Lantern Resource Hub</a> - Clear and actionable guidance from Splunk Experts</li>

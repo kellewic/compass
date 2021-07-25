@@ -16,7 +16,7 @@ In addition to sending alerts to specific groups or people, Splunk Infrastructur
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/devops__triage__alerts">Alerts</a></span>
+<span><a href="/app/$env:app$/devops__triage__alerts">Alerts</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

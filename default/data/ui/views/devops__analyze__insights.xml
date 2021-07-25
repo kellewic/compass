@@ -16,8 +16,8 @@ Answer business-critical questions like, “Are our services contributing to a g
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/devops__analyze__aiops">AIOps</a>, </span>
-<span><a href="/app/welcome-app/devops__analyze__machine_learning">Machine Learning</a></span>
+<span><a href="/app/$env:app$/devops__analyze__aiops">AIOps</a>, </span>
+<span><a href="/app/$env:app$/devops__analyze__machine_learning">Machine Learning</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

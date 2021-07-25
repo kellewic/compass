@@ -16,11 +16,11 @@ Service Insights in IT Service Intelligence (ITSI) represents the mapping and mo
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/itops__monitor__infrastructure">Infrastructure</a>, </span>
-<span><a href="/app/welcome-app/itops__monitor__services">Services</a>, </span>
-<span><a href="/app/welcome-app/itops__monitor__cloud">Cloud</a>, </span>
-<span><a href="/app/welcome-app/itops__analyze__aiops">AIOps</a>, </span>
-<span><a href="/app/welcome-app/itops__analyze__machine_learning">Machine Learning</a></span>
+<span><a href="/app/$env:app$/itops__monitor__infrastructure">Infrastructure</a>, </span>
+<span><a href="/app/$env:app$/itops__monitor__services">Services</a>, </span>
+<span><a href="/app/$env:app$/itops__monitor__cloud">Cloud</a>, </span>
+<span><a href="/app/$env:app$/itops__analyze__aiops">AIOps</a>, </span>
+<span><a href="/app/$env:app$/itops__analyze__machine_learning">Machine Learning</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

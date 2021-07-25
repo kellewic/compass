@@ -16,8 +16,8 @@ Machine learning is the field of computer science working to develop computer sy
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/devops__analyze__aiops">AIOps</a>, </span>
-<span><a href="/app/welcome-app/devops__analyze__insights">Insights</a></span>
+<span><a href="/app/$env:app$/devops__analyze__aiops">AIOps</a>, </span>
+<span><a href="/app/$env:app$/devops__analyze__insights">Insights</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

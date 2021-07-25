@@ -16,8 +16,8 @@ The Episode Review dashboard in IT Service Intelligence (ITSI) enables organizat
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/itops__triage__notable_events">Notable Events</a>, </span>
-<span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a></span>
+<span><a href="/app/$env:app$/itops__triage__notable_events">Notable Events</a>, </span>
+<span><a href="/app/$env:app$/itops__triage__tickets">Tickets</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

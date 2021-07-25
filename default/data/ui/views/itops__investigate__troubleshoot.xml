@@ -15,10 +15,10 @@ Deep dives are an investigative tool to help you identify and troubleshoot issue
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-        <span><a href="/app/welcome-app/itops__investigate__incidents">Incidents</a>, </span>
-        <span><a href="/app/welcome-app/itops__monitor__services">Services</a>, </span>
-        <span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
-        <span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a></span>
+        <span><a href="/app/$env:app$/itops__investigate__incidents">Incidents</a>, </span>
+        <span><a href="/app/$env:app$/itops__monitor__services">Services</a>, </span>
+        <span><a href="/app/$env:app$/itops__triage__alerts">Alerts</a>, </span>
+        <span><a href="/app/$env:app$/itops__triage__tickets">Tickets</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

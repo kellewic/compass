@@ -18,7 +18,7 @@ The Splunk platform can index any kind of data. In particular, the Splunk platfo
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-        <span><a href="/app/welcome-app/all__collect__streaming">Streaming</a></span>
+        <span><a href="/app/$env:app$/all__collect__streaming">Streaming</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

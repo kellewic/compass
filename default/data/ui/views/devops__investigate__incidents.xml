@@ -16,9 +16,9 @@ Empower teams with automated incident response that gets incidents and alerts to
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/devops__investigate__troubleshoot">Troubleshoot</a>, </span>
-<span><a href="/app/welcome-app/devops__triage__alerts">Alerts</a>, </span>
-<span><a href="/app/welcome-app/devops__triage__tickets">Tickets</a></span>
+<span><a href="/app/$env:app$/devops__investigate__troubleshoot">Troubleshoot</a>, </span>
+<span><a href="/app/$env:app$/devops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/$env:app$/devops__triage__tickets">Tickets</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

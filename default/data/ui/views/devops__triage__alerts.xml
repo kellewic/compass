@@ -16,7 +16,7 @@ Act before infrastructure performance affects end-user experience. With built-in
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/devops__triage__tickets">Tickets</a></span>
+<span><a href="/app/$env:app$/devops__triage__tickets">Tickets</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

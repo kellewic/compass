@@ -18,12 +18,12 @@ Machine learning is the field of computer science working to develop computer sy
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/all__collect__streaming">Streaming</a>, </span>
-<span><a href="/app/welcome-app/security__monitor__threats">Threats</a>, </span>
-<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
-<span><a href="/app/welcome-app/security__analyze__fraud">Fraud</a>, </span>
-<span><a href="/app/welcome-app/security__analyze__ai">AI</a>, </span>
-<span><a href="/app/welcome-app/security__analyze__behavior">Behavior</a></span>
+<span><a href="/app/$env:app$/all__collect__streaming">Streaming</a>, </span>
+<span><a href="/app/$env:app$/security__monitor__threats">Threats</a>, </span>
+<span><a href="/app/$env:app$/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/$env:app$/security__analyze__fraud">Fraud</a>, </span>
+<span><a href="/app/$env:app$/security__analyze__ai">AI</a>, </span>
+<span><a href="/app/$env:app$/security__analyze__behavior">Behavior</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

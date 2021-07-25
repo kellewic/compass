@@ -19,10 +19,10 @@ Understand threat activity so you can thwart breaches. Identify, prioritize and 
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/security__triage__alerts">Alerts</a>, </span>
-<span><a href="/app/welcome-app/security__triage__notable_events">Notable Events</a>, </span>
-<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a>, </span>
-<span><a href="/app/welcome-app/security__triage__tickets">Tickets</a></span>
+<span><a href="/app/$env:app$/security__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/$env:app$/security__triage__notable_events">Notable Events</a>, </span>
+<span><a href="/app/$env:app$/security__triage__riskbased_alerting">Risk-based Alerting</a>, </span>
+<span><a href="/app/$env:app$/security__triage__tickets">Tickets</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

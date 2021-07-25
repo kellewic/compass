@@ -15,9 +15,9 @@ Bring powerful indexing, searching, alerting and reporting to the challenges of 
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/security__investigate__incidents">Incidents</a>, </span>
-<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
-<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
+<span><a href="/app/$env:app$/security__investigate__incidents">Incidents</a>, </span>
+<span><a href="/app/$env:app$/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/$env:app$/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

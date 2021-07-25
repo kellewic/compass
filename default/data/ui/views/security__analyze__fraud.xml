@@ -16,10 +16,10 @@ Patterns of fraud are often found across different silos of both structured and 
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/security__monitor__compliance">Compliance</a>, </span>
-<span><a href="/app/welcome-app/security__monitor__risk">Risk</a>, </span>
-<span><a href="/app/welcome-app/security__analyze__behavior">Behavior</a>, </span>
-<span><a href="/app/welcome-app/security__analyze__machine_learning">Machine Learning</a></span>
+<span><a href="/app/$env:app$/security__monitor__compliance">Compliance</a>, </span>
+<span><a href="/app/$env:app$/security__monitor__risk">Risk</a>, </span>
+<span><a href="/app/$env:app$/security__analyze__behavior">Behavior</a>, </span>
+<span><a href="/app/$env:app$/security__analyze__machine_learning">Machine Learning</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

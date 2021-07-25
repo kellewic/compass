@@ -16,9 +16,9 @@ A notable event is the foundational unit of the IT Service Intelligence (ITSI) E
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/itops__investigate__incidents">Incidents</a>, </span>
-<span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
-<span><a href="/app/welcome-app/itops__triage__tickets">Tickets</a></span>
+<span><a href="/app/$env:app$/itops__investigate__incidents">Incidents</a>, </span>
+<span><a href="/app/$env:app$/itops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/$env:app$/itops__triage__tickets">Tickets</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

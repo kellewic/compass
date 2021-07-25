@@ -16,9 +16,9 @@ You can run actions on episodes either automatically using aggregation policies 
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/itops__triage__alerts">Alerts</a>, </span>
-<span><a href="/app/welcome-app/itops__triage__notable_events">Notable Events</a>, </span>
-<span><a href="/app/welcome-app/itops__triage__episodes">Episodes</a></span>
+<span><a href="/app/$env:app$/itops__triage__alerts">Alerts</a>, </span>
+<span><a href="/app/$env:app$/itops__triage__notable_events">Notable Events</a>, </span>
+<span><a href="/app/$env:app$/itops__triage__episodes">Episodes</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>

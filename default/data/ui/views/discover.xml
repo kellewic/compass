@@ -1,11 +1,8 @@
-<dashboard>
+<dashboard hideExport="true">
   <label>Discover</label>
   <description>The Data-to-Everything&#8482; Platform, Powering Security, IT and DevOps.</description>
   <init>
     <set token="separator">&#8226;</set>
-    <set token="img_style">position: absolute; z-index: 2; top:5; left:0; margin-left:10px</set>
-    <set token="img_height">40</set>
-    <set token="img_width">40</set>
   </init>
   <row id="top_header">
     <panel>
@@ -33,14 +30,14 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/welcome-app/any_machine_data.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          <img src="/static/app/$env:app$/any_machine_data.jpg"/>
           Collect
         </div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/all__collect__streaming">Streaming</a> $separator$ <a href="/app/welcome-app/all__collect__forwarding">Forwarding</a></div>
+        <div class="action-link"><a href="/app/$env:app$/all__collect__streaming">Streaming</a> $separator$ <a href="/app/$env:app$/all__collect__forwarding">Forwarding</a></div>
       </html>
     </panel>
   </row>
@@ -49,24 +46,24 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/welcome-app/find_problems_faster.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          <img src="/static/app/$env:app$/find_problems_faster.jpg"/>
           Investigate
         </div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/itops__investigate__troubleshoot">Troubleshoot</a> $separator$ <a href="/app/welcome-app/itops__investigate__incidents">Incidents</a></div>
+        <div class="action-link"><a href="/app/$env:app$/itops__investigate__troubleshoot">Troubleshoot</a> $separator$ <a href="/app/$env:app$/itops__investigate__incidents">Incidents</a></div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/security__investigate__threat_hunting">Threat Hunting</a> $separator$ <a href="/app/welcome-app/security__investigate__incidents">Incidents</a> $separator$ <a href="/app/welcome-app/security__investigate__forensics">Forensics</a></div>
+        <div class="action-link"><a href="/app/$env:app$/security__investigate__threat_hunting">Threat Hunting</a> $separator$ <a href="/app/$env:app$/security__investigate__incidents">Incidents</a> $separator$ <a href="/app/$env:app$/security__investigate__forensics">Forensics</a></div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/devops__investigate__troubleshoot">Troubleshoot</a> $separator$ <a href="/app/welcome-app/devops__investigate__incidents">Incidents</a></div>
+        <div class="action-link"><a href="/app/$env:app$/devops__investigate__troubleshoot">Troubleshoot</a> $separator$ <a href="/app/$env:app$/devops__investigate__incidents">Incidents</a></div>
       </html>
     </panel>
   </row>
@@ -75,24 +72,24 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/welcome-app/monitor_diag.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          <img src="/static/app/$env:app$/monitor_diag.jpg"/>
           Monitor
         </div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/itops__monitor__infrastructure">Infrastructure</a> $separator$ <a href="/app/welcome-app/itops__monitor__cloud">Cloud</a> $separator$ <a href="/app/welcome-app/itops__monitor__services">Services</a></div>
+        <div class="action-link"><a href="/app/$env:app$/itops__monitor__infrastructure">Infrastructure</a> $separator$ <a href="/app/$env:app$/itops__monitor__cloud">Cloud</a> $separator$ <a href="/app/$env:app$/itops__monitor__services">Services</a></div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/security__monitor__threats">Threats</a> $separator$ <a href="/app/welcome-app/security__monitor__compliance">Compliance</a> $separator$ <a href="/app/welcome-app/security__monitor__risk">Risk</a></div>
+        <div class="action-link"><a href="/app/$env:app$/security__monitor__threats">Threats</a> $separator$ <a href="/app/$env:app$/security__monitor__compliance">Compliance</a> $separator$ <a href="/app/$env:app$/security__monitor__risk">Risk</a></div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/devops__monitor__cloud">Cloud</a> $separator$ <a href="/app/welcome-app/devops__monitor__applications">Applications</a> $separator$ <a href="/app/welcome-app/devops__monitor__user_experience">User Experience</a></div>
+        <div class="action-link"><a href="/app/$env:app$/devops__monitor__cloud">Cloud</a> $separator$ <a href="/app/$env:app$/devops__monitor__applications">Applications</a> $separator$ <a href="/app/$env:app$/devops__monitor__user_experience">User Experience</a></div>
       </html>
     </panel>
   </row>
@@ -101,24 +98,24 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/welcome-app/prioritize_act.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          <img src="/static/app/$env:app$/prioritize_act.jpg"/>
           Triage
         </div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/itops__triage__alerts">Alerts</a> $separator$ <a href="/app/welcome-app/itops__triage__notable_events">Notable Events</a> $separator$ <a href="/app/welcome-app/itops__triage__episodes">Episodes</a> $separator$ <a href="/app/welcome-app/itops__triage__tickets">Tickets</a></div>
+        <div class="action-link"><a href="/app/$env:app$/itops__triage__alerts">Alerts</a> $separator$ <a href="/app/$env:app$/itops__triage__notable_events">Notable Events</a> $separator$ <a href="/app/$env:app$/itops__triage__episodes">Episodes</a> $separator$ <a href="/app/$env:app$/itops__triage__tickets">Tickets</a></div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/security__triage__alerts">Alerts</a> $separator$ <a href="/app/welcome-app/security__triage__notable_events">Notable Events</a> $separator$ <a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a> $separator$ <a href="/app/welcome-app/security__triage__tickets">Tickets</a></div>
+        <div class="action-link"><a href="/app/$env:app$/security__triage__alerts">Alerts</a> $separator$ <a href="/app/$env:app$/security__triage__notable_events">Notable Events</a> $separator$ <a href="/app/$env:app$/security__triage__riskbased_alerting">Risk-based Alerting</a> $separator$ <a href="/app/$env:app$/security__triage__tickets">Tickets</a></div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/devops__triage__alerts">Alerts</a> $separator$ <a href="/app/welcome-app/devops__triage__tickets">Tickets</a></div>
+        <div class="action-link"><a href="/app/$env:app$/devops__triage__alerts">Alerts</a> $separator$ <a href="/app/$env:app$/devops__triage__tickets">Tickets</a></div>
       </html>
     </panel>
   </row>
@@ -127,24 +124,24 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/welcome-app/ml_analytics.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          <img src="/static/app/$env:app$/ml_analytics.jpg"/>
           Analyze
         </div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/itops__analyze__aiops">AIOps</a> $separator$ <a href="/app/welcome-app/itops__analyze__machine_learning">Machine Learning</a> $separator$ <a href="/app/welcome-app/itops__analyze__insights">Insights</a></div>
+        <div class="action-link"><a href="/app/$env:app$/itops__analyze__aiops">AIOps</a> $separator$ <a href="/app/$env:app$/itops__analyze__machine_learning">Machine Learning</a> $separator$ <a href="/app/$env:app$/itops__analyze__insights">Insights</a></div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/security__analyze__ai">AI</a> $separator$ <a href="/app/welcome-app/security__analyze__machine_learning">Machine Learning</a> $separator$ <a href="/app/welcome-app/security__analyze__behavior">Behavior</a> $separator$ <a href="/app/welcome-app/security__analyze__fraud">Fraud</a></div>
+        <div class="action-link"><a href="/app/$env:app$/security__analyze__ai">AI</a> $separator$ <a href="/app/$env:app$/security__analyze__machine_learning">Machine Learning</a> $separator$ <a href="/app/$env:app$/security__analyze__behavior">Behavior</a> $separator$ <a href="/app/$env:app$/security__analyze__fraud">Fraud</a></div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/devops__analyze__aiops">AIOps</a> $separator$ <a href="/app/welcome-app/devops__analyze__machine_learning">Machine Learning</a> $separator$ <a href="/app/welcome-app/devops__analyze__insights">Insights</a></div>
+        <div class="action-link"><a href="/app/$env:app$/devops__analyze__aiops">AIOps</a> $separator$ <a href="/app/$env:app$/devops__analyze__machine_learning">Machine Learning</a> $separator$ <a href="/app/$env:app$/devops__analyze__insights">Insights</a></div>
       </html>
     </panel>
   </row>
@@ -153,14 +150,14 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/welcome-app/it_ops_mgmt.jpg" style="$img_style$" height="$img_height$" width="$img_width$"/>
+          <img src="/static/app/$env:app$/it_ops_mgmt.jpg"/>
           Automate
         </div>
       </html>
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/welcome-app/all__automate__orchestration_automation_and_response">Orchestration, Automation, and Response</a></div>
+        <div class="action-link"><a href="/app/$env:app$/all__automate__orchestration_automation_and_response">Orchestration, Automation, and Response</a></div>
       </html>
     </panel>
   </row>

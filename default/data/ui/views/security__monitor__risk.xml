@@ -16,9 +16,9 @@ Splunk collects machine data from any source in any format across the enterprise
       </div>
       <div class="related">
         <span class="bold">Related: </span>
-<span><a href="/app/welcome-app/security__monitor__threats">Threats</a>, </span>
-<span><a href="/app/welcome-app/security__monitor__compliance">Compliance</a>, </span>
-<span><a href="/app/welcome-app/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
+<span><a href="/app/$env:app$/security__monitor__threats">Threats</a>, </span>
+<span><a href="/app/$env:app$/security__monitor__compliance">Compliance</a>, </span>
+<span><a href="/app/$env:app$/security__triage__riskbased_alerting">Risk-based Alerting</a></span>
       </div>
       <div class="basics">
         <h1>The Basics</h1>
