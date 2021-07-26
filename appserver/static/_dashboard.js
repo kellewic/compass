@@ -146,7 +146,7 @@ function(
                 element: 'div.platform',
                 popover: {
                     title: 'Platform',
-                    description: 'This area shows what Splunk products can help in this area.',
+                    description: 'This area shows what Splunk products can help with this action.',
                     position: 'bottom'
                 }
             },
@@ -170,7 +170,7 @@ function(
                 element: 'div.help',
                 popover: {
                     title: 'Help and Guidance',
-                    description: 'This area provides links to additional information to help you in this area.',
+                    description: 'This area provides links to additional information to help you with this action.',
                     position: 'bottom',
                     nextBtnText: 'Back to Discover'
                 },
