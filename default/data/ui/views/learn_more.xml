@@ -1,4 +1,4 @@
-<dashboard hideExport="true" hideTitle="true">
+<dashboard hideExport="true" hideTitle="true" version="1.1">
   <label>Learn More</label>
   <row>
     <panel>

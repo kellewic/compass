@@ -1,4 +1,4 @@
-<dashboard hideExport="true" hideEdit="true">
+<dashboard hideExport="true" hideEdit="true" version="1.1">
   <label>ITOps - Triage - Notable Events</label>
   <row id="main">
     <panel>

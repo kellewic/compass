@@ -1,4 +1,4 @@
-<dashboard hideExport="true" hideEdit="true">
+<dashboard hideExport="true" hideEdit="true" version="1.1">
   <label>DevOps - Analyze - Machine Learning</label>
   <row id="main">
     <panel>
