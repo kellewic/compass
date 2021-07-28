@@ -110,7 +110,7 @@
     </panel>
     <panel>
       <html>
-        <div class="action-link"><a href="/app/$env:app$/security__triage__alerts">Alerts</a> $separator$ <a href="/app/$env:app$/security__triage__notable_events">Notable Events</a> $separator$ <a href="/app/$env:app$/security__triage__riskbased_alerting">Risk-based Alerting</a> $separator$ <a href="/app/$env:app$/security__triage__tickets">Tickets</a></div>
+        <div class="action-link"><a href="/app/$env:app$/security__triage__alerts">Alerts</a> $separator$ <a href="/app/$env:app$/security__triage__notable_events">Notable Events</a> $separator$ <a href="/app/$env:app$/security__triage__riskbased_alerting">RBA</a> $separator$ <a href="/app/$env:app$/security__triage__tickets">Tickets</a></div>
       </html>
     </panel>
     <panel>
