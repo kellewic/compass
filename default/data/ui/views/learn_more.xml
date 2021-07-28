@@ -1,6 +1,6 @@
 <dashboard hideExport="true" hideTitle="true" version="1.1">
   <label>Learn More</label>
-  <row>
+  <row id="learn_more_row1">
     <panel>
       <html>
           <span class="learn-more-panel-title">Industry Resources</span>
@@ -22,7 +22,7 @@
       </html>
     </panel>
   </row>
-  <row>
+  <row id="learn_more_row2">
     <panel>
       <html>
           <span class="learn-more-panel-title">Become An Expert</span>
@@ -42,7 +42,7 @@
       </html>
     </panel>
   </row>
-  <row>
+  <row id="learn_more_row3">
     <panel>
       <html>
           <span class="learn-more-panel-title">Stay Up To Date</span>

@@ -122,3 +122,11 @@ div.action-header img {
     text-rendering: optimizelegibility;
 }
 
+div#learn_more_row1 div.dashboard-panel {
+    height: 150px;
+}
+
+div#learn_more_row3 div.dashboard-panel {
+    height: 170px;
+}
+
