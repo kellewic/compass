@@ -1,0 +1,8 @@
+*.pyo
+*.pyc
+.coverage
+test.py
+test.sh
+TODO
+**/__pycache__
+htmlcov/
