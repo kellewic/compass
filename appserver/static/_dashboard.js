@@ -24,6 +24,9 @@ function(
     Driver,
     mvc
 ){
+    //////////////////////
+    //    PAGE TOURS    //
+    //////////////////////
     var currentUrl = window.location.href;
     const pageHelpDriver = new Driver();
 
@@ -197,5 +200,15 @@ function(
 
         pageHelpDriver.start();
     }
+
+    /////////////////////
+    //    INTERESTS    //
+    /////////////////////
+
+
+
 });
+
+
+
 
