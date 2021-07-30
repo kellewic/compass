@@ -30,7 +30,7 @@ The following pages are used:
 
 ### Functionality
 
-This app is purely visual and runs no searches. It does pull some content dynamically via JavaScript. Only links and content from [Splunk's website](https://splunk.com) are used in the app.
+This app runs no searches and only links content from [Splunk's website](https://splunk.com).
 
 ### Support
 
