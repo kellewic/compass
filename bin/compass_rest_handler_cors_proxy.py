@@ -34,7 +34,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), "..
 import rest_handler
 #import splunklib.client as client
 
-
 class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
     def __init__(self, command_line, command_arg):
         super(CompassHandlerCorsProxy_v1, self).__init__(command_line, command_arg, logger)
@@ -56,7 +55,8 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
         data = re.sub('<script[ >].*?</script>', "", data)
         data = re.sub('<noscript>.*?</noscript>', "", data)
         data = re.sub('<!--.*?-->', "", data)
-        data = re.sub('<(?:meta|link) .*?>', "", data)
+        data = re.sub('^.*?<body.*?>', "", data)
+        data = re.sub('\s*</body>\s*</html>', "", data)
         
         self.data = data
         self.status = response.status
@@ -69,6 +69,9 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
         url = "https://www.splunk.com/en_us/data-insider.html"
         self._get_url(url)
 
+        cors_url = request_info.raw_args.get("server", {}).get("rest_uri", "*")
+        cors_url = re.sub(':\d+$', "", cors_url)
+
         return {
             'payload': self.data,
             'status': self.status
@@ -76,7 +79,33 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
 
 
 if __name__ == "__main__":
+    ri = rest_handler.RequestInfo("admin", "SESSION_KEY", "GET", "/path", "", {
+	"output_mode": "xml",
+	"output_mode_explicit": False,
+	"server": {
+	    "rest_uri": "https://127.0.0.1:8089",
+	    "hostname": "dev",
+	    "servername": "dev",
+	    "guid": "6954F00C-A372-4B5E-A868-4EFAD67431B2"
+	},
+	"restmap": {
+	    "name": "script:compass_rest_handler_cors_proxy",
+	    "conf": {
+		"handler": "compass_rest_handler_cors_proxy.CompassHandlerCorsProxy_v1",
+		"match": "/compass/v1/cors_proxy",
+		"output_modes": "json",
+		"passHttpCookies": "true",
+		"passHttpHeaders": "true",
+		"passPayload": "true",
+		"python.version": "python3",
+		"requireAuthentication": "true",
+		"script": "compass_rest_handler_cors_proxy.py",
+		"scripttype": "persist"
+	    }
+	}
+    })
+
     proxy = CompassHandlerCorsProxy_v1("cmd_line", "cmd_args")
-    response = proxy.get_data_insider(None)
+    response = proxy.get_data_insider(ri)
     print(response)
 
