@@ -1,5 +1,5 @@
 <dashboard hideExport="true" hideTitle="true" version="1.1">
-  <label>Interests</label>
+  <label>Stay Current</label>
 
   <row><panel><html><div class="row-header"><span class="row-header-text">Data Insider</span></div></html></panel></row>
   <row id="interests_row1">

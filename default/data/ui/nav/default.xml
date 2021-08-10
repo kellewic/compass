@@ -1,5 +1,5 @@
 <nav search_view="search">
   <view name="discover" default='true' />
   <view name="learn_more" />
-  <view name="interests" />
+  <view name="stay_current" />
 </nav>
