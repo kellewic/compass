@@ -206,7 +206,7 @@ function(
 
         pageHelpDriver.start();
     }
-    else if (currentUrl.endsWith('interests')) {
+    else if (currentUrl.endsWith('stay_current')) {
         // get URL data via CORS proxy
         var getUrlData = function(urlName, dataHandler){
             var loc = window.location;
