@@ -1,10 +1,7 @@
+## system-level libs
+import logging, os, re, sys
 
-## System-level libs
-import logging
-import os
-import re
-import sys
-
+## normalize py2 and py3 urllib to same namespace
 try:
     import urllib.parse as urlparse
 except:
@@ -19,27 +16,28 @@ if os.environ.get("HFNILUWALBLQYTOKLGO") is not None:
         sys.path.append("{}/lib/python2.7/site-packages".format(os.environ.get("SPLUNK_HOME", "/opt/splunk")))
 ## NOTE: END TESTING
 
-## Splunk environment libs
-#import splunk
-#import splunk.entity
-#import splunk.Intersplunk
+## libs that come with Splunk
 import httplib2
 
 app_name = os.path.splitext(os.path.basename(os.path.realpath(__file__)))[0]
-#app_name="compass_cors_proxy"
 logger = logging.getLogger(app_name)
 
-## App-specific libs
+## app-specific libs
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", "lib"))
 import rest_handler
-#import splunklib.client as client
 
+## acts as a simple proxy that retrieves a URL and removes all style, script, and noscript tags;
+## comments; and extraneous whitespace. Also, everything except <body>...</body> content is 
+## also removed.
 class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
+    ## this should become a config, but for now a class variable
+    url_maps = {
+        "data_insider": "https://www.splunk.com/en_us/data-insider.html"
+    }
+
+
     def __init__(self, command_line, command_arg):
         super(CompassHandlerCorsProxy_v1, self).__init__(command_line, command_arg, logger)
-
-        self.data = ""
-        self.status = 200
 
 
     def _get_url(self, url):
@@ -58,26 +56,22 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
         data = re.sub('^.*?<body.*?>', "", data)
         data = re.sub('\s*</body>\s*</html>', "", data)
         
-        self.data = data
-        self.status = response.status
-
         response.close()
         conn.close()
 
-
-    def get_data_insider(self, request_info, **kwargs):
-        url = "https://www.splunk.com/en_us/data-insider.html"
-        self._get_url(url)
-
-        cors_url = request_info.raw_args.get("server", {}).get("rest_uri", "*")
-        cors_url = re.sub(':\d+$', "", cors_url)
-
         return {
-            'payload': self.data,
-            'status': self.status
+            'payload': data,
+            'status': response.status
         }
 
 
+    def get_data_insider(self, request_info, **kwargs):
+        url = self.url_maps.get(sys._getframe(0).f_code.co_name.replace("get_", ""), "")
+        return self._get_url(url)
+
+
+
+## NOTE: FOR TESTING
 if __name__ == "__main__":
     ri = rest_handler.RequestInfo("admin", "SESSION_KEY", "GET", "/path", "", {
 	"output_mode": "xml",
