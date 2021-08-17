@@ -218,10 +218,7 @@ function(
                 type: "GET",
                 dataType: "text",
                 success: function(data){
-                    data = data.replace(/^b'\s*/, "");
-                    data = data.replace(/'$/, "");
                     data = $.parseHTML($.trim(data), null);
-
                     dataHandler($('<div>').append(data));
                 }
             });

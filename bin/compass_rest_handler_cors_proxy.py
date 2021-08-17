@@ -79,7 +79,8 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
         conn = httplib2.HTTPSConnectionWithTimeout(parsed_url.netloc, port=443, timeout=5)
         conn.request("GET", parsed_url.path)
         response = conn.getresponse()
-        data = str(response.read())
+        data = response.read()
+        data = data.decode("utf-8", "replace")
 
         data = re.sub('(?:[\r\n\t]+|\\\\[rnt])', "", data)
         data = re.sub('> +<', "><", data)
@@ -89,7 +90,7 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
         data = re.sub('<!--.*?-->', "", data)
         data = re.sub('^.*?<body.*?>', "", data)
         data = re.sub('\s*</body>\s*</html>', "", data)
-        
+
         response.close()
         conn.close()
 
