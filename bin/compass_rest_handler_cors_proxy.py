@@ -1,24 +1,7 @@
-## system-level libs
-import ctypes, logging, os, re, sys
+import ctypes, logging, os, re, sys, traceback
+from http.client import HTTPSConnection
+from urllib.parse import urlparse
 from types import FunctionType, TracebackType
-
-## normalize py2 and py3 urllib to same namespace
-try:
-    import urllib.parse as urlparse
-except:
-    import urlparse
-
-
-## NOTE: FOR TESTING
-if os.environ.get("HFNILUWALBLQYTOKLGO") is not None:
-    if sys.version_info.major >= 3:
-        sys.path.append("{}/lib/python3.7/site-packages".format(os.environ.get("SPLUNK_HOME", "/opt/splunk")))
-    else:
-        sys.path.append("{}/lib/python2.7/site-packages".format(os.environ.get("SPLUNK_HOME", "/opt/splunk")))
-## NOTE: END TESTING
-
-## libs that come with Splunk
-import httplib2
 
 app_name = os.path.splitext(os.path.basename(os.path.realpath(__file__)))[0]
 logger = logging.getLogger(app_name)
@@ -75,8 +58,8 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
     ## get URL content and return it
     @staticmethod
     def get_url(url):
-        parsed_url = urlparse.urlparse(url, allow_fragments=True)
-        conn = httplib2.HTTPSConnectionWithTimeout(parsed_url.netloc, port=443, timeout=5)
+        parsed_url = urlparse(url, allow_fragments=True)
+        conn = HTTPSConnection(parsed_url.netloc, port=443, timeout=5)
         conn.request("GET", parsed_url.path)
         response = conn.getresponse()
         data = response.read()
@@ -125,108 +108,26 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
         return internal_func
 
 
-## Shamelessly plucked from the bowels of Jinja2
-##
-## In PY2, there's no way to easily change a traceback's tb_next. This functionality
-## wasn't added until PY3 where you can dynamically create type.TracebackType
-## objects.
-def _init_ugly_crap():
-    if sys.version_info[0] == 2:
-        # figure out size of _Py_ssize_t for Python 2
-        if hasattr(ctypes.pythonapi, 'Py_InitModule4_64'):
-            _Py_ssize_t = ctypes.c_int64
-        else:
-            _Py_ssize_t = ctypes.c_int
-    else:
-        # platform ssize_t on Python 3
-        _Py_ssize_t = ctypes.c_ssize_t
-
-
-    # regular python
-    class _PyObject(ctypes.Structure):
-        pass
-    _PyObject._fields_ = [
-        ('ob_refcnt', _Py_ssize_t),
-        ('ob_type', ctypes.POINTER(_PyObject))
-    ]
-
-    # python with trace
-    if hasattr(sys, 'getobjects'):
-        class _PyObject(ctypes.Structure):
-            pass
-        _PyObject._fields_ = [
-            ('_ob_next', ctypes.POINTER(_PyObject)),
-            ('_ob_prev', ctypes.POINTER(_PyObject)),
-            ('ob_refcnt', _Py_ssize_t),
-            ('ob_type', ctypes.POINTER(_PyObject))
-        ]
-
-    class _Traceback(_PyObject):
-        pass
-    _Traceback._fields_ = [
-        ('tb_next', ctypes.POINTER(_Traceback)),
-        ('tb_frame', ctypes.POINTER(_PyObject)),
-        ('tb_lasti', ctypes.c_int),
-        ('tb_lineno', ctypes.c_int)
-    ]
-
-    ## set the tb_next attribute of a traceback object.
-    def tb_set_next(tb, next_tb):
-        if not (isinstance(tb, TracebackType) and
-                (next_tb is None or isinstance(next_tb, TracebackType))):
-            raise TypeError('tb_set_next arguments must be traceback objects')
-
-        obj = _Traceback.from_address(id(tb))
-
-        if tb.tb_next is not None:
-            old = _Traceback.from_address(id(tb.tb_next))
-            old.ob_refcnt -= 1
-
-        if next_tb is None:
-            obj.tb_next = ctypes.POINTER(_Traceback)()
-        else:
-            next_tb = _Traceback.from_address(id(next_tb))
-            next_tb.ob_refcnt += 1
-            obj.tb_next = ctypes.pointer(next_tb)
-
-    return tb_set_next
-
-## save function reference and remove the above function
-tb_set_next = None
-try:
-    tb_set_next = _init_ugly_crap()
-except:
-    pass
-del _init_ugly_crap
-
-
-## removes our Attribute error from tracebacks
+## removes our not_implemented() Attribute error from tracebacks
 def excepthook(typ, value, tb):
     ## find the traceback object just before our AttributeError
+    tb_chain = []
     curr_tb = tb
-    next_tb = curr_tb.tb_next
 
-    while next_tb is not None:
-        next_tb = curr_tb.tb_next
-        if next_tb is not None and next_tb.tb_next is None: break
-        curr_tb = next_tb
+    while curr_tb.tb_next is not None:
+        tb_chain.append(curr_tb)
+        curr_tb = curr_tb.tb_next
 
-    ## if this fails, the original traceback is just forwarded to sys.excepthook
-    try:
-        ## set second to last traceback object tb_next to None to remove our AttributeError
-        if tb_set_next is not None:
-            tb_set_next(curr_tb, None)
-    except:
-        pass
+    new_tb = None
 
-    ## pass to original sys.excepthook
-    _excepthook(typ, value, tb)
+    for curr_tb in reversed(tb_chain):
+        new_tb = TracebackType(new_tb, curr_tb.tb_frame, curr_tb.tb_lasti, curr_tb.tb_lineno)
 
-## save original excepthook from sys module
-_excepthook = sys.excepthook
+    traceback.print_exception(typ, value, new_tb)
+    sys.exit()
+
 ## inject our excepthook to sys module
 sys.excepthook = excepthook
-
 
 
 ## NOTE: FOR TESTING
