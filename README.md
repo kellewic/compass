@@ -18,19 +18,19 @@ The **Learn More** dashboard provides links to main sections of Splunk's website
 
 ![learn-more dashboard screenshot](appserver/static/dashboard-learn-more-screenshot.jpg)
 
-### Interests
+### Stay Current
 
-The **Interests** dashboard provides dynamic content from [splunk.com](https://splunk.com) such as blog posts, events, and .conf presentations. This information helps keep you up-to-date on new insights across IT.
+The **Stay Current** dashboard provides dynamic content from [splunk.com](https://splunk.com) such as blog posts, events, and .conf presentations. This information helps keep you up-to-date on new insights across IT.
 
 The following pages are used:
 * https://www.splunk.com/en_us/data-insider.html
 * https://www.splunk.com/en_us/blog
-* https://www.splunk.com/en_us/about-us/events.html
 
 
 ### Functionality
 
 This app runs no searches and only links content from [Splunk's website](https://splunk.com).
+Splunk version 8.x is supported.
 
 ### Support
 
