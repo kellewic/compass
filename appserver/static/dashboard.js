@@ -224,15 +224,16 @@ function(
             });
         };
 
+        // HTML template for panel content
         var tmpl = '<span class="interests-panel-title">{{category}}</span><ul>{{#eles}}<li><a target="_blank" href="{{link}}">{{title}}</a> - {{body}}</li>{{/eles}}</ul>';
+        // only keep this many results for display
+        var max_results = 5;
 
         // process Data Insider URL
         getUrlData("data_insider", function(div){
-            // only keep this many results for display
-            var max_results = 5;
-            var map = new Map();
             var selector = div.find('a.carousel-card');
             var rendered_tmpl = "";
+            var map = new Map();
 
             selector.each(function(){
                 var obj = $(this);
@@ -273,9 +274,55 @@ function(
             $('div#insider_data_panel').append(Mustache.render(tmpl, {"category": "Data & Analytics", "eles": map.get("DATA & ANALYTICS")}));
             $('div#insider_tech_panel').append(Mustache.render(tmpl, {"category": "Emerging Technologies", "eles": map.get("EMERGING TECHNOLOGIES")}));
         });
+
+        // Wrapper function for Splunk Blog article parsing
+        var getBlogData = function(urlName, panelName, panelTitle){
+            getUrlData(urlName, function(div){
+                var selector = div.find('section#mosaic-tiles div.tile-content');
+                var rendered_tmpl = "";
+                var map = new Map();
+                var category;
+
+                selector.each(function(){
+                    var obj = $(this);
+
+                    category = $.trim(obj.find('span.category-name').text()).toUpperCase();
+                    var title = $.trim(obj.find('div.text-section .tile-heading').text());
+                    var body = $.trim(obj.find('p.tile-desc').text());
+
+                    var link = obj.find('div.tile-link a').attr('href');
+                    link = link.replace(/^https:\/\/www\.splunk\.com/, "");
+                    link = "https://www.splunk.com" + link;
+
+                    var card_data = {
+                        "category": category,
+                        "link": link,
+                        "title": title,
+                        "body": body,
+                    };
+
+                    if (map.has(category)){
+                        var cat = map.get(category);
+                        if (cat.length < max_results){
+                            cat.push(card_data);
+                        }
+                    }
+                    else {
+                        map.set(category, [card_data]);
+                    }
+                });
+
+                $('div#' + panelName).append(Mustache.render(tmpl, {"category": panelTitle, "eles": map.get(category)}));
+            });
+        };
+
+        getBlogData("blog_devops", "blog_devops_panel", "DevOps");
+        getBlogData("blog_it", "blog_it_panel", "IT");
+        getBlogData("blog_security", "blog_security_panel", "Security");
+        getBlogData("blog_platform", "blog_platform_panel", "Platform");
+        getBlogData("blog_tips_and_tricks", "blog_tips_and_tricks_panel", "Tips & Tricks");
+        getBlogData("blog_events", "blog_events_panel", "Events");
     }
 });
-
-
 
 

@@ -26,7 +26,25 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
     url_maps = {
         "data_insider": {
             "url": "https://www.splunk.com/en_us/data-insider.html"
-        }
+        },
+        "blog_devops": {
+            "url": "https://www.splunk.com/en_us/blog/devops.html"
+        },
+        "blog_it": {
+            "url": "https://www.splunk.com/en_us/blog/it.html"
+        },
+        "blog_security": {
+            "url": "https://www.splunk.com/en_us/blog/security.html"
+        },
+        "blog_platform": {
+            "url": "https://www.splunk.com/en_us/blog/platform.html"
+        },
+        "blog_tips_and_tricks": {
+            "url": "https://www.splunk.com/en_us/blog/tips-and-tricks.html"
+        },
+        "blog_events": {
+            "url": "https://www.splunk.com/en_us/blog/conf-splunklive.html"
+        },
     }
 
 
@@ -73,6 +91,7 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
         data = re.sub('<!--.*?-->', "", data)
         data = re.sub('^.*?<body.*?>', "", data)
         data = re.sub('\s*</body>\s*</html>', "", data)
+        data = re.sub('<img.*?>', "", data)
 
         response.close()
         conn.close()
