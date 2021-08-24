@@ -31,8 +31,17 @@ function(
     mvc
 ){
     var currentUrl = window.location.href;
-
     const pageHelpDriver = new Driver();
+
+    // Check to make sure we're running under a valid Splunk version. This affects showing
+    // dynamic content since the underlying Python REST endpoint only supports Python 3.
+    var splunkVersionIsValid = false;
+    try {
+        if (+window.$C.VERSION_LABEL.replace(/\..*$/, "") >= 8) splunkVersionIsValid = true;
+    }
+    catch(e) {
+        console.log("COMPASS ERROR: Can't determine Splunk version; disabling dynamic content");
+    }
 
     if (currentUrl.endsWith('discover')) {
         // main page tour
@@ -207,6 +216,19 @@ function(
         pageHelpDriver.start();
     }
     else if (currentUrl.endsWith('stay_current')) {
+        // Check for good Splunk version
+        if (splunkVersionIsValid === false){
+            // Hide normal dashboard content
+            $("div#row1").css('display', 'none');
+            $("div#row2").css('display', 'none');
+            $('div[id*="interests_"').css('display', 'none');
+
+            // Display version warning
+            $("div#version_warning").css('display', 'block');
+            return;
+        }
+
+
         // get URL data via CORS proxy
         var getUrlData = function(urlName, dataHandler){
             var loc = window.location;

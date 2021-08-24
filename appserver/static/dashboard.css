@@ -150,5 +150,14 @@ span.row-header-text {
     display: inline-block;
 }
 
+div#version_warning,
+.hidden {
+    display: none;
+}
 
+.version-warning {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 
