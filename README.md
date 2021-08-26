@@ -26,10 +26,13 @@ The following pages are used:
 * https://www.splunk.com/en_us/data-insider.html
 * https://www.splunk.com/en_us/blog
 
-
 ### Functionality
 
-This app runs no searches and only links content from [Splunk's website](https://splunk.com). Splunk version 8.x is supported.
+This app runs no searches and only links content from [Splunk's website](https://splunk.com).
+
+Splunk version 8.x is supported for the entire application.
+
+Splunk version 7.x is supported for "Discover" and "Learn More" dashboards.
 
 ### Support
 
