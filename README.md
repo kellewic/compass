@@ -27,6 +27,8 @@ The following pages are used:
 * https://www.splunk.com/en_us/data-insider.html
 * https://www.splunk.com/en_us/blog
 
+![stay-current dashboard screenshot](appserver/static/dashboard-stay-current-screenshot.jpg)
+
 ### Functionality
 
 This app runs no searches and only links content from [Splunk's website](https://splunk.com).
