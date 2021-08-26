@@ -1,4 +1,4 @@
-![Compass Splunk app](static/appIcon_2x.png)
+![Compass Splunk app](static/appIcon_2x.png?)
 # Compass
 
 Compass shows how the Splunk Data-to-Everything&trade; platform helps ITOps, Security, and DevOps teams bring data to every question, decision, and action. The ITOps, Security, and DevOps pillars are broken down into six main activities: collect, investigate, monitor, triage, analyze, and automate; mirroring a common maturity journey across teams.
@@ -11,13 +11,13 @@ There's a lot of information on [Splunk's website](https://splunk.com) and this 
 
 The **Discover** dashboard shows you Splunk's capabilities within the context of ITOps, Security, and DevOps. Each link within the table provides additional information to aid you in your data maturity journey.
 
-![discover dashboard screenshot](appserver/static/dashboard-discover-screenshot.jpg)
+![discover dashboard screenshot](appserver/static/dashboard-discover-screenshot.jpg?)
 
 ### Learn More
 
 The **Learn More** dashboard provides links to main sections of Splunk's website. These links will help you become an expert in your Splunk environment, the data you collect, and how it can help your business achieve its goals.
 
-![learn-more dashboard screenshot](appserver/static/dashboard-learn-more-screenshot.jpg)
+![learn-more dashboard screenshot](appserver/static/dashboard-learn-more-screenshot.jpg?)
 
 ### Stay Current
 
@@ -27,7 +27,7 @@ The following pages are used:
 * https://www.splunk.com/en_us/data-insider.html
 * https://www.splunk.com/en_us/blog
 
-![stay-current dashboard screenshot](appserver/static/dashboard-stay-current-screenshot.jpg)
+![stay-current dashboard screenshot](appserver/static/dashboard-stay-current-screenshot.jpg?)
 
 ### Functionality
 
