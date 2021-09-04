@@ -142,6 +142,7 @@ def excepthook(typ, value, tb):
     for curr_tb in reversed(tb_chain):
         new_tb = TracebackType(new_tb, curr_tb.tb_frame, curr_tb.tb_lasti, curr_tb.tb_lineno)
 
+    ## send exception to user and exit
     traceback.print_exception(typ, value, new_tb)
     sys.exit()
 
