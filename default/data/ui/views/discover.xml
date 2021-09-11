@@ -30,7 +30,7 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/$env:app$/any_machine_data.jpg"/>
+        <img src="/static/app/$env:app$/icons/any_machine_data.jpg"/>
           Collect
         </div>
       </html>
@@ -46,7 +46,7 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/$env:app$/find_problems_faster.jpg"/>
+            <img src="/static/app/$env:app$/icons/find_problems_faster.jpg"/>
           Investigate
         </div>
       </html>
@@ -72,7 +72,7 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/$env:app$/monitor_diag.jpg"/>
+            <img src="/static/app/$env:app$/icons/monitor_diag.jpg"/>
           Monitor
         </div>
       </html>
@@ -98,7 +98,7 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/$env:app$/prioritize_act.jpg"/>
+            <img src="/static/app/$env:app$/icons/prioritize_act.jpg"/>
           Triage
         </div>
       </html>
@@ -124,7 +124,7 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/$env:app$/ml_analytics.jpg"/>
+            <img src="/static/app/$env:app$/icons/ml_analytics.jpg"/>
           Analyze
         </div>
       </html>
@@ -150,7 +150,7 @@
     <panel>
       <html>
         <div class="action-header">
-          <img src="/static/app/$env:app$/it_ops_mgmt.jpg"/>
+            <img src="/static/app/$env:app$/icons/it_ops_mgmt.jpg"/>
           Automate
         </div>
       </html>
