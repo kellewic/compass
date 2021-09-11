@@ -1,8 +1,8 @@
 require.config({
     waitSeconds: 0,
     paths: {
-        driver: '../app/compass/driver.min',
-        mustache: '../app/compass/mustache.min'
+        driver: '../app/compass/3rdparty/driver.min',
+        mustache: '../app/compass/3rdparty/mustache.min'
     },
     shim: {
         'driver': {
