@@ -1,4 +1,4 @@
-@import 'driver.min.css';
+@import '3rdparty/driver.min.css';
 
 #top_header div:first-of-type {
 	background-color: rgb(242, 244, 245);
