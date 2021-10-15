@@ -5,12 +5,8 @@ require.config({
         mustache: '../app/compass/3rdparty/mustache.min'
     },
     shim: {
-        'driver': {
-            exports: 'Driver'
-        },
-        'mustache': {
-            exports: 'Mustache'
-        }
+        'driver': { exports: 'Driver' },
+        'mustache': { exports: 'Mustache' }
     }
 });
 
@@ -19,7 +15,6 @@ require([
     "underscore",
     "driver",
     "mustache",
-    'splunkjs/mvc',
     "splunkjs/ready!",
     "splunkjs/mvc/simplexml/ready!"
 ],
@@ -27,8 +22,7 @@ function(
     $,
     _,
     Driver,
-    Mustache,
-    mvc
+    Mustache
 ){
     var currentUrl = window.location.href;
     const pageHelpDriver = new Driver();
@@ -36,8 +30,9 @@ function(
     // Check to make sure we're running under a valid Splunk version. This affects showing
     // dynamic content since the underlying Python REST endpoint only supports Python 3.
     var splunkVersionIsValid = false;
+    var splunkVersion = Splunk.util.getConfigValue("VERSION_LABEL", 0);
     try {
-        if (+window.$C.VERSION_LABEL.replace(/\..*$/, "") >= 8) splunkVersionIsValid = true;
+        if (+splunkVersion.replace(/\..*$/, "") >= 8) splunkVersionIsValid = true;
     }
     catch(e) {
         console.log("COMPASS ERROR: Can't determine Splunk version; disabling dynamic content");
@@ -240,7 +235,15 @@ function(
                 type: "GET",
                 dataType: "text",
                 success: function(data){
-                    data = $.parseHTML($.trim(data), null);
+                    data = data.trim();
+
+                    if (data.startsWith("Warn: ")) {
+                        data = '<span class="url-error">' + data + '</span>';
+                    }
+                    else {
+                        data = $.parseHTML(data, null);
+                    }
+
                     dataHandler($('<div>').append(data));
                 }
             });
@@ -253,6 +256,13 @@ function(
 
         // process Data Insider URL
         getUrlData("data_insider", function(div){
+            var error = div.find('span.url-error');
+
+            if (error.length > 0) {
+                $('div#insider_it_panel').append(error);
+                return;
+            }
+
             var selector = div.find('a.carousel-card');
             var rendered_tmpl = "";
             var map = new Map();
@@ -300,6 +310,12 @@ function(
         // Wrapper function for Splunk Blog article parsing
         var getBlogData = function(urlName, panelName, panelTitle){
             getUrlData(urlName, function(div){
+                var error = div.find('span.url-error');
+
+                if (error.length > 0) {
+                    return;
+                }
+
                 var selector = div.find('section#mosaic-tiles div.tile-content');
                 var rendered_tmpl = "";
                 var map = new Map();
@@ -346,5 +362,4 @@ function(
         getBlogData("blog_events", "blog_events_panel", "Events");
     }
 });
-
 
