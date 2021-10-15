@@ -1,0 +1,484 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Compass | Manage</title>
+	<link rel="shortcut icon" href="{{SPLUNKWEB_URL_PREFIX}}/static/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="{{SPLUNKWEB_URL_PREFIX}}/static/build/css/bootstrap-enterprise.css" />
+    <link rel="stylesheet" type="text/css" href="{{SPLUNKWEB_URL_PREFIX}}/static/build/css/splunkjs-dashboard.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{SPLUNKWEB_URL_PREFIX}}/static/app/compass/dashboard.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{SPLUNKWEB_URL_PREFIX}}/static/app/compass/bootstrap-custom.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{SPLUNKWEB_URL_PREFIX}}/static/app/compass/3rdparty/toastify.min.css" />
+    <style>
+        .row-description {
+            margin-bottom: 15px;
+            text-align: center;
+            border: 2px dashed #bbbbbb;
+        }
+        .display-ib {
+            display: inline-block;
+        }
+        .form-label {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="simplexml preload locale-en">
+<div class="dashboard-body container-fluid main-section-body" data-role="main">
+	<div class="dashboard-header clearfix">
+		<h2>Manage and configure</h2>
+	</div>
+
+    <div id="ProxyBanner"></div>
+	<div id="ProxyRow" class="dashboard-row">
+		<div id="ProxyPanel" class="dashboard-cell" style="width: 100%;">
+			<div class="dashboard-panel clearfix">
+				<div class="panel-element-row">
+					<div id="ProxyElement" class="dashboard-element html" style="width: 100%;">
+						<div class="panel-body html">
+                            <div class="row-description">
+                                <h2>
+                                    The <kbd>IP or URL</kbd> field must start with the correct scheme - either http:// or https://.<br/>
+                                    If your proxy doesn't require a username or password, leave them blank.
+                                </h2>
+                            </div>
+                            <div class="display-ib">
+                                <div class="form-label">IP or URL</div>
+                                <div id="ProxyIpText" style="width: 300px"></div>
+                            </div>
+                            <div class="display-ib">
+                                <div class="form-label">Port</div>
+                                <div id="ProxyPortText" style="width: 100px"></div>
+                            </div>
+                            <div class="display-ib">
+                                <div class="form-label">Username</div>
+                                <div id="ProxyUserText" style="width: 300px"></div>
+                            </div>
+                            <div class="display-ib">
+                                <div class="form-label">Password</div>
+                                <div id="ProxyPasswordText" style="width: 300px"></div>
+                            </div>
+                            <button id="ProxySettingsSave" type="button" class="btn btn-sm btn-primary">Save Settings</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div style="min-height: 300px; height: 300px;"</div>
+</div>
+
+<script src="{{SPLUNKWEB_URL_PREFIX}}/config?autoload=1" crossorigin="use-credentials"></script>
+<script src="{{SPLUNKWEB_URL_PREFIX}}/static/js/i18n.js"></script>
+<script src="{{SPLUNKWEB_URL_PREFIX}}/i18ncatalog?autoload=1"></script>
+<script src="{{SPLUNKWEB_URL_PREFIX}}/static/build/simplexml/index.js"></script>
+<script src="{{SPLUNKWEB_URL_PREFIX}}/static/app/compass/3rdparty/toastify.min.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+require.config({
+    waitSeconds: 0,
+    paths: {
+        mustache: '../app/compass/3rdparty/mustache.min'
+    },
+    shim: {
+        'mustache': { exports: 'Mustache' }
+    }
+});
+
+require([
+        "jquery",
+        "underscore",
+        "splunkjs/mvc",
+        "splunkjs/mvc/simplexml",
+        "splunkjs/mvc/layoutview",
+        "splunkjs/mvc/simplexml/dashboardview",
+        "splunkjs/mvc/simpleform/formutils",
+        "splunkjs/mvc/simplexml/urltokenmodel",
+		"splunkjs/mvc/textinputview",
+        "mustache",
+        "contrib/text!../app/compass/templates/banner_row.html",
+    ],
+    function(
+        $,
+        _,
+        mvc,
+        DashboardController,
+        LayoutView,
+        Dashboard,
+        FormUtils,
+        UrlTokenModel,
+		TextInput,
+        Mustache,
+        BannerRowTemplate,
+    ){
+        //
+        // VARIABLES & FUNCTIONS
+        //
+        let pageLoading = true;
+
+        var service = mvc.createService({
+            owner: "nobody"
+        });
+
+        // roles we deem to be admin capable
+        let adminRoles = ["admin", "sc_admin", "compass_admin"];
+
+        // search params when we don't need an actual time period
+        var defaultSearchParams = {earliest_time: "-1m@m", latest_time: "now"};
+
+        // empty proxy settings
+        let proxySettings = {"ip": "", "port": "", "user": "", "password": ""};
+
+        // called when a search job is null
+        function searchJobNull(err) {
+            let errorStr = "Unknown Error!";
+            if (err && err.data && err.data.messages && err.data.messages[0]['text']) {
+                errorStr = err.data.messages[0]['text'];
+            } else if (err && err.data && err.data.messages) {
+                errorStr = JSON.stringify(err.data.messages);
+            }
+
+            return errorStr;
+        }
+
+        // called when a search job fails
+        function searchJobFailed(properties) {
+            let errorStr = "Unknown Error!";
+            if (properties && properties._properties && properties._properties.messages && properties._properties.messages[0]['text']) {
+                errorStr = properties._properties.messages[0]['text'];
+            } else if (properties && properties._properties && properties._properties.messages) {
+                errorStr = JSON.stringify(properties._properties.messages);
+            }
+
+            showToast(ToastType.ERROR, errorStr);
+        }
+
+        // called when a search job encounters an error
+        function searchJobError(err) {
+            showToast(ToastType.ERROR, searchJobNull(err));
+        }
+
+
+        // placeholder -> template mapping
+        const templateMap = {
+            "ProxyBanner": {
+                "template": BannerRowTemplate,
+                "title": "PROXY SETTINGS"
+            },
+        };
+
+		// base toast configuration
+		let toastBaseConfig = {
+			close: false,
+			gravity: "bottom",
+			position: "right",
+			offset: {
+				x: 10,
+				y: 10
+			},
+			style: {
+				"font-weight": "bold",
+				"font-size": "16px"
+			},
+			duration: 3000
+		};
+
+        // success toast configuration
+		let toastSuccessConfig = $.extend(true, {style: {background: "#4caf50"}}, toastBaseConfig);
+        // error toast configuration
+		let toastErrorConfig = $.extend(true, {stopOnFocus: true, style: {background: "#f44336"}}, toastBaseConfig);
+
+        const ToastType = {
+            SUCCESS: 1,
+            ERROR: 2
+        };
+
+        function showToast(toast_type, msg) {
+            var config = toastBaseConfig;
+
+            if (toast_type == ToastType.SUCCESS) {
+                config = toastSuccessConfig;
+            }
+            else if (toast_type == ToastType.ERROR) {
+                config = toastErrorConfig;
+                config.duration = 6000;
+            }
+
+            config.text = msg;
+            Toastify(config).showToast();
+        }
+
+        // Save configuration to config kvstore
+        function saveKvstoreConfig(sourcetype, data) {
+            var searchQuery = "| makeresults | fields - _time | eval sourcetype=\"" + sourcetype + "\" | eval data=json_object(";
+
+            Object.entries(data).forEach(([key, value]) => {
+                searchQuery = searchQuery + "\"" + key + "\", \"" + value + "\", ";
+            });
+
+            searchQuery = searchQuery.replace(/, $/, "") + ") | inputlookup append=t kv_compass_configuration where sourcetype!=\"" + sourcetype + "\"";
+            searchQuery = searchQuery + "| outputlookup kv_compass_configuration";
+
+            service.search(
+                searchQuery,
+                defaultSearchParams,
+                function(err, job) {
+                    if (job == null) {
+                        showToast(ToastType.ERROR, searchJobNull(err));
+                    } else {
+                        job.track({
+                            period: 200
+                        }, {
+                            done: function(job) {
+                                showToast(ToastType.SUCCESS, "Settings saved");
+                            },
+                            failed: searchJobFailed,
+                            error: searchJobError
+                        });
+                    }
+                }
+            );
+        }
+
+        // Get a configuration from config kvstore
+        function getKvstoreConfig(sourcetype, dataHandler) {
+            var searchQuery = "| inputlookup kv_compass_configuration where sourcetype=\"" + sourcetype + "\"";
+
+            service.search(
+                searchQuery,
+                defaultSearchParams,
+                function(err, job) {
+                    if (job == null) {
+                        showToast(ToastType.ERROR, searchJobNull(err));
+                    } else {
+                        job.track({
+                            period: 200
+                        }, {
+                            done: function(job) {
+                                job.results({}, function(err, results) {
+                                    var fields = results.fields;
+                                    var rows = results.rows;
+
+                                    for (var i = 0; i < rows.length; i++) {
+                                        var values = rows[i];
+                                        for (var j = 0; j < values.length; j++) {
+                                            var field = fields[j];
+                                            var value = values[j];
+
+                                            if (field == "data") {
+                                                dataHandler(JSON.parse(value));
+                                            }
+                                        }
+                                    }
+                                });
+                            },
+                            failed: searchJobFailed,
+                            error: searchJobError
+                        });
+                    }
+                }
+            );
+        }
+
+
+        //
+        // TOKENS
+        //
+
+        // Create token namespaces
+        let urlTokenModel = new UrlTokenModel();
+        mvc.Components.registerInstance('url', urlTokenModel);
+
+        let defaultTokenModel = mvc.Components.getInstance('default', {
+            create: true
+        });
+        let submittedTokenModel = mvc.Components.getInstance('submitted', {
+            create: true
+        });
+
+        urlTokenModel.on('url:navigate', function() {
+            defaultTokenModel.set(urlTokenModel.toJSON());
+            if (!_.isEmpty(urlTokenModel.toJSON()) && !_.all(urlTokenModel.toJSON(), _.isUndefined)) {
+                submitTokens();
+            } else {
+                submittedTokenModel.clear();
+            }
+        });
+
+        // Initialize tokens
+        defaultTokenModel.set(urlTokenModel.toJSON());
+
+        function submitTokens() {
+            // Copy the contents of the defaultTokenModel to the submittedTokenModel and urlTokenModel
+            FormUtils.submitForm({
+                replaceState: pageLoading
+            });
+        }
+
+        function setToken(name, value) {
+            defaultTokenModel.set(name, value);
+            submittedTokenModel.set(name, value);
+        }
+
+        function unsetToken(name) {
+            defaultTokenModel.unset(name);
+            submittedTokenModel.unset(name);
+        }
+
+
+        //
+        // SEARCH MANAGERS
+        //
+
+
+        //
+        // SPLUNK LAYOUT
+        //
+        new LayoutView()
+			.render()
+			.getContainerElement()
+			.appendChild($('.dashboard-body')[0]);
+
+        //
+        // DASHBOARD EDITOR
+        //
+        new Dashboard({
+            id: 'dashboard',
+            el: $('.dashboard-body'),
+            showTitle: true,
+            editable: true
+        }, {
+            tokens: true
+        }).render();
+
+
+        //
+        // VIEWS: VISUALIZATION ELEMENTS
+        //
+        _.each(templateMap, function(value, key, list){
+            value["id"] = _.uniqueId();
+            value["name"] = key;
+
+            $("div#" + key).replaceWith($(Mustache.render(value['template'], value)));
+        });
+
+
+        //
+        // VIEWS: FORM INPUTS
+        //
+		let proxyIpInput = new TextInput({
+            id: _.uniqueId(),
+            el: $('div#ProxyIpText')
+		}).render();
+
+		let proxyPortInput = new TextInput({
+            id: _.uniqueId(),
+            el: $('div#ProxyPortText')
+		}).render();
+
+		let proxyUserInput = new TextInput({
+            id: _.uniqueId(),
+            el: $('div#ProxyUserText')
+		}).render();
+
+		let proxyPasswordInput = new TextInput({
+            id: _.uniqueId(),
+            el: $('div#ProxyPasswordText')
+		}).render();
+
+        DashboardController.onReady(
+            // once dashboard is built, set input values to the proxy settings
+            // in our config kvstore and update the components.
+            _.bind(getKvstoreConfig, null, "config:proxy", function(values) { 
+                proxyIpInput.val(values.ip);
+                proxyIpInput.updateView();
+
+                proxyPortInput.val(values.port);
+                proxyPortInput.updateView();
+
+                proxyUserInput.val(values.user);
+                proxyUserInput.updateView();
+
+                proxyPasswordInput.val(decodeURIComponent(values.password));
+                proxyPasswordInput.updateView();
+
+                // save input values to kvstore when button is clicked
+                $('button#ProxySettingsSave').on('click', function(e){
+                    e.stopPropagation();
+                    $(this).prop('disabled', true);
+
+                    let kvstore_data = {
+                        'ip': $('div#ProxyIpText input').val(),
+                        'port': $('div#ProxyPortText input').val(),
+                        'user': $('div#ProxyUserText input').val(),
+                        'password': encodeURIComponent($('div#ProxyPasswordText input').val()),
+                    };
+
+                    saveKvstoreConfig("config:proxy", kvstore_data)
+
+                    $(this).prop('disabled', false);
+                });
+
+                // check current user's roles to see if they can edit settings
+                service.currentUser(function(err, user) {
+                    var roles = user.properties().roles;
+                    var found = false;
+
+                    for (let i = 0; i < roles.length; i++) {
+                        if (adminRoles.includes(roles[i])) {
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    // if user isn't an admin, remove the click handler from the button
+                    // in case a user gets clever and re-enables it via beowser dev tools.
+                    // Also disable the button.
+                    if (found == false) {
+                        var button = $('button#ProxySettingsSave');
+                        button.off();
+                        button.prop("disabled", true);
+                    }
+                });
+            })
+        );
+
+        //
+        // SUBMIT FORM DATA
+        //
+        DashboardController.onReady(function() {
+            if (!submittedTokenModel.has('earliest') && !submittedTokenModel.has('latest')) {
+                submittedTokenModel.set({
+                    earliest: '0',
+                    latest: ''
+                });
+            }
+        });
+
+        // Initialize time tokens to default
+        if (!defaultTokenModel.has('earliest') && !defaultTokenModel.has('latest')) {
+            defaultTokenModel.set({
+                earliest: '0',
+                latest: ''
+            });
+        }
+
+        if (!_.isEmpty(urlTokenModel.toJSON())) {
+            submitTokens();
+        }
+
+        //
+        // DASHBOARD READY
+        //
+        DashboardController.ready();
+        pageLoading = false;
+
+	}
+);
+// ]]>
+</script>
+</body></html>
+

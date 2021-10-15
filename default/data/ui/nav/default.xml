@@ -1,5 +1,6 @@
 <nav search_view="search">
-  <view name="discover" default='true' />
-  <view name="learn_more" />
-  <view name="stay_current" />
+    <view name="discover" default='true' />
+    <view name="learn_more" />
+    <view name="stay_current" />
+    <a href="manage">Manage and Configure</a>
 </nav>

@@ -41,4 +41,10 @@ export = none
 access = read : [ * ], write : [ * ]
 export = system
 
+### kvstores
+[transforms/kv_compass_configuration]
+access = read : [ * ], write : [ admin, sc_admin, compass_admin ]
+
+[collections/kv_compass_configuration]
+access = read : [ * ], write : [ admin, sc_admin, compass_admin ]
 
