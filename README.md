@@ -31,7 +31,9 @@ The following pages are used:
 
 ### Functionality
 
-This app runs no searches and only links content from [Splunk's website](https://splunk.com).
+Does not runs searches against indexed data.
+
+Downloads content from [Splunk's website](https://splunk.com).
 
 Splunk version 8.x is supported for the entire application.
 
