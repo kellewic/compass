@@ -23,7 +23,7 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
 
 
     ## get URL content and return it
-    def get_url(self, url, request_info):
+    def get_url(self, url, request_info, is_html=True):
         proxy_settings = None
 
         try:
@@ -45,13 +45,17 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
             ip = data["ip"]
             if ip is not None and len(ip) > 0:
                 ## create proxy location from the proxy parts
-                ip = re.sub('^(https?://)(.*$)', r'\1{}:{}@\2:{}'.format(data["user"], data["password"], data["port"]), ip.strip())
-                proxy_settings = {'http': ip, 'https': ip}
+                if ip.startswith("http"):
+                    connect_str = re.sub('^(https?://)(.*$)', r'\1{}:{}@\2:{}'.format(data["user"], data["password"], data["port"]), ip.strip())
+                else:
+                    connect_str = "http://{}:{}@{}:{}".format(data["user"], data["password"], ip.strip(),  data["port"])
+
+                proxy_settings = {'http': connect_str, 'https': connect_str}
 
         except Exception as e:
-            with tempfile.NamedTemporaryFile(delete=False) as fp:
-                fp.write("ERROR: {}\n".format(str(e)).encode('utf-8'))
-
+            return {
+                 'payload': 'Warn: exception encountered: ' + str(e)
+            }
 
         ## get remote URL data and return to requestor
         try:
@@ -61,15 +65,18 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
                 response = requests.get(url, timeout=5, verify=certifi.where())
 
             data = response.text
-            data = re.sub('(?:[\r\n\t]+|\\\\[rnt])', "", data)
-            data = re.sub('> +<', "><", data)
-            data = re.sub('<style[ >].*?</style>', "", data)
-            data = re.sub('<script[ >].*?</script>', "", data)
-            data = re.sub('<noscript>.*?</noscript>', "", data)
-            data = re.sub('<!--.*?-->', "", data)
-            data = re.sub('^.*?<body.*?>', "", data)
-            data = re.sub('\s*</body>\s*</html>', "", data)
-            data = re.sub('<img.*?>', "", data)
+
+            if is_html == True:
+                ## remove HTML we don't need
+                data = re.sub('(?:[\r\n\t]+|\\\\[rnt])', "", data)
+                data = re.sub('> +<', "><", data)
+                data = re.sub('<style[ >].*?</style>', "", data)
+                data = re.sub('<script[ >].*?</script>', "", data)
+                data = re.sub('<noscript>.*?</noscript>', "", data)
+                data = re.sub('<!--.*?-->', "", data)
+                data = re.sub('^.*?<body.*?>', "", data)
+                data = re.sub('\s*</body>\s*</html>', "", data)
+                data = re.sub('<img.*?>', "", data)
 
             return {
                 'payload': data,
@@ -83,7 +90,8 @@ class CompassHandlerCorsProxy_v1(rest_handler.RESTHandler):
 
 
     def get_data_insider(self, request_info, **kwargs):
-        return self.get_url('https://www.splunk.com/en_us/data-insider.html', request_info)
+        #return self.get_url('https://www.splunk.com/en_us/data-insider.html', request_info, False)
+        return self.get_url('https://www.splunk.com/en_us/data-insider/jcr:content/root/responsivegrid/customer_apps_filter.data.html', request_info, False)
 
 
     def get_blog_devops(self, request_info, **kwargs):

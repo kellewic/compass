@@ -250,7 +250,9 @@ function(
         };
 
         // HTML template for panel content
-        var tmpl = '<span class="interests-panel-title">{{category}}</span><ul>{{#eles}}<li><a target="_blank" href="{{link}}">{{title}}</a> - {{body}}</li>{{/eles}}</ul>';
+        var tmpl = '{{#category}}<span class="interests-panel-title">{{category}}</span>{{/category}}';
+        tmpl = tmpl + '{{#eles}}<ul><li><a target="_blank" href="{{link}}">{{title}}</a> - {{body}}</li></ul>{{/eles}}';
+
         // only keep this many results for display
         var max_results = 5;
 
@@ -259,52 +261,42 @@ function(
             var error = div.find('span.url-error');
 
             if (error.length > 0) {
-                $('div#insider_it_panel').append(error);
+                $('div#insider_left_panel').append(error);
                 return;
             }
 
-            var selector = div.find('a.carousel-card');
-            var rendered_tmpl = "";
-            var map = new Map();
+            // bring in data as JSON object
+            var selector = JSON.parse(div.text().trim()).dataInsiderList;
 
-            selector.each(function(){
-                var obj = $(this);
+            // translate date string to epoch time
+            for (let i = 0; i < selector.length; i++) {
+                selector[i]["createdDate"] = new Date(selector[i]["createdDate"]).getTime();
+            }
 
-                var category = $.trim(obj.find('.splunk2-eyebrow').text()).toUpperCase();
-                var title = $.trim(obj.find('.splunk2-h4').text());
-                var body = $.trim(obj.find('.splunk-body p').text());
+            // sort data by epoch time descending
+            selector = selector.sort((a, b) => b.createdDate - a.createdDate);
 
-                var link = obj.attr('href');
-                link = link.replace(/^https:\/\/www\.splunk\.com/, "");
-                link = "https://www.splunk.com" + link;
+            // create container to store data to display
+            var map = new Map().set("LEFT", []).set("RIGHT", []);
+            var item, cat, category;
 
-                // merge these together to reduce number of dashboard panels
-                if (category == "IT OPERATIONS"){
-                    category = "IT";
+            for (let i = 0; i < selector.length; i++) {
+                item = selector[i];
+                category = (i % 2 == 0) ? "LEFT" : "RIGHT";
+
+                cat = map.get(category);
+
+                if (cat.length < max_results){
+                    cat.push({
+                        "link": "https://www.splunk.com" + item["ctaLink"].replace(/^https:\/\/www\.splunk\.com/, ""),
+                        "title": item["headlineText"].trim(),
+                        "body": item["bodyText"].trim().replace(/(?:\\u[0-9a-fA-F]{1,4}|<)\/?p(?:\\u[0-9a-fA-F]{1,4}|>)/g, "")
+                    });
                 }
+            }
 
-                var card_data = {
-                    "category": category,
-                    "link": link,
-                    "title": title,
-                    "body": body,
-                };
-
-                if (map.has(category)){
-                    var cat = map.get(category);
-                    if (cat.length < max_results){
-                        cat.push(card_data);
-                    }
-                }
-                else {
-                    map.set(category, [card_data]);
-                }
-            });
-
-            $('div#insider_it_panel').append(Mustache.render(tmpl, {"category": "IT Operations", "eles": map.get("IT")}));
-            $('div#insider_security_panel').append(Mustache.render(tmpl, {"category": "Security", "eles": map.get("SECURITY")}));
-            $('div#insider_data_panel').append(Mustache.render(tmpl, {"category": "Data & Analytics", "eles": map.get("DATA & ANALYTICS")}));
-            $('div#insider_tech_panel').append(Mustache.render(tmpl, {"category": "Emerging Technologies", "eles": map.get("EMERGING TECHNOLOGIES")}));
+            $('div#insider_left_panel').append(Mustache.render(tmpl, {"eles": map.get("LEFT")}));
+            $('div#insider_right_panel').append(Mustache.render(tmpl, {"eles": map.get("RIGHT")}));
         });
 
         // Wrapper function for Splunk Blog article parsing
